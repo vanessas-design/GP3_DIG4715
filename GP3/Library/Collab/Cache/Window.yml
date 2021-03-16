@@ -14,8 +14,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - .collabignore
+    - Assets/Prefab/Cabinet.prefab
+    - Assets/Prefab/Cabinet.prefab.meta
+    - Assets/Prefab/Cookie.prefab
+    - Assets/Prefab/Cookie.prefab.meta
+    - Assets/Prefab/Fork.prefab
+    - Assets/Prefab/Fork.prefab.meta
+    - Assets/Prefab/GrappleSphere.prefab
+    - Assets/Prefab/GrappleSphere.prefab.meta
+    - Assets/Prefab/Platform1.prefab
+    - Assets/Prefab/Platform1.prefab.meta
+    - Assets/Prefab/Platform2.prefab
+    - Assets/Prefab/Platform2.prefab.meta
+    - Assets/Prefab/Platform3.prefab
+    - Assets/Prefab/Platform3.prefab.meta
+    - Assets/Prefab/Sink.prefab
+    - Assets/Prefab/Sink.prefab.meta
+    - Assets/Prefab/Spoon.prefab
+    - Assets/Prefab/Spoon.prefab.meta
+    - Assets/Prefab/WoodenSpoon.prefab
+    - Assets/Prefab/WoodenSpoon.prefab.meta
+    - Assets/Scripts/PlayerMovement2.cs
+    - Assets/Scripts/PlayerMovement2.cs.meta
+    - Packages/manifest.json
+    - Packages/packages-lock.json
+    - ProjectSettings/EditorBuildSettings.asset
+    - ProjectSettings/ProjectSettings.asset
+    - ProjectSettings/ProjectVersion.txt
+    - ProjectSettings/UnityConnectSettings.asset
     - 
-    m_Values: 01
+    m_Values: 000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
