@@ -27,7 +27,7 @@ public class playerController : MonoBehaviour
 
     //Block placement and removal variables
     private throwableScript ThrowableScript;
-    private static int ammoCount = 3;
+    private int ammoCount = 3;
     [SerializeField]
     private Text ammoText;
     private Vector3 raycastLine;
@@ -266,7 +266,7 @@ public class playerController : MonoBehaviour
     {
         if(stage1 && stage2 && stage3)
         {
-            ammoCount = 3;
+            //ammoCount = 3;
             stage1 = false;
             stage2 = false;
             stage3 = false;
@@ -274,7 +274,7 @@ public class playerController : MonoBehaviour
         }
         else if (transform.position.y < -50.0f)
         {
-            ammoCount = 3;
+            //ammoCount = 3;
             SceneManager.LoadScene(activeScene.name);
         }
     }

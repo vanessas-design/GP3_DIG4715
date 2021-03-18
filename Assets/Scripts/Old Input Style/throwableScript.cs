@@ -32,6 +32,10 @@ public class throwableScript : MonoBehaviour
         {
             Destroy(GetComponent<Rigidbody>());
         }
+        else if(col.collider.gameObject.layer == 10)
+        {
+            Destroy(GetComponent<Rigidbody>());
+        }
     }
 
     private void selfDestruct()
