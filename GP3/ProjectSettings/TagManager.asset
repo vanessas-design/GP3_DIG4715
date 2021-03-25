@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - toyBody
+  - MacGuffin
+  - Teleporter1
+  - Teleporter2
+  - Teleporter3
+  - TeleporterHome
   layers:
   - Default
   - TransparentFX
@@ -13,9 +19,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - terrain
+  - toy
+  - grapple
   - 
   - 
   - 
