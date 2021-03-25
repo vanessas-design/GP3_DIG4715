@@ -244,6 +244,7 @@ MonoBehaviour:
   lookSensitivity: 3
   speed: 5
   jumpForce: 8
+  GrappleGun: {fileID: 1398020240370733298}
   ammoText: {fileID: 0}
   blockPlace: {fileID: 5754248746930672281, guid: f7e43969660ac564ab3355d8cfbfd294, type: 3}
   MacGuffin: {fileID: 7570318417407027278, guid: 7f226d90109d3fb4eb8825c47a4d4547, type: 3}
@@ -355,6 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54941b4683b4b504e99ccb2e98d5b9a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grappling: 0
   gunTip: {fileID: 1398020239066206880}
   player: {fileID: 1398020239170186475}
   playerRB: {fileID: 4056905281046053158}

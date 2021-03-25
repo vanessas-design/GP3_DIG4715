@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class grappleGun : MonoBehaviour
 {
     //private LineRenderer lr;
-    private bool grappling = false;
-    private int grappleRange = 10;
+    public bool grappling = false;
+    private int grappleRange = 15;
     private float grappleDelay = 0.15f;
     
     [SerializeField]
@@ -74,13 +74,15 @@ public class grappleGun : MonoBehaviour
             deltaZ = player.transform.position.z - grapplePoint.transform.position.z;
             //calculate distance between player and grappling point
             deviation = Mathf.Sqrt(deltaX * deltaX + deltaY * deltaY + deltaZ * deltaZ);
-
-            springForce = 9.81f * (deviation - equiDistance);
-            springDirection = grapplePoint.transform.position - player.transform.position;
-            Vector3.Normalize(springDirection);
-            springDirection *= springForce;
-            playerRB.AddForce(springDirection);
-            print(grappleDelay);
+            if (deviation - equiDistance > 0 )
+            {
+                springForce = 9.81f;
+                springDirection = grapplePoint.transform.position - player.transform.position;
+                Vector3.Normalize(springDirection);
+                springDirection *= springForce;
+                playerRB.AddForce(springDirection);
+                print(grappleDelay);
+            }            
         }
     }
     void StartGrapple()

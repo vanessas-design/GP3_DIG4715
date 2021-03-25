@@ -25,6 +25,9 @@ public class playerController : MonoBehaviour
     private bool jumpKeyPressed = false;
     private bool isJumping = false;
 
+    [SerializeField]
+    private grappleGun GrappleGun;
+
     //Block placement and removal variables
     private throwableScript ThrowableScript;
     private int ammoCount = 3;
@@ -167,7 +170,14 @@ public class playerController : MonoBehaviour
         // Calculate movement
         Vector3 _moveHor = transform.right * Input.GetAxisRaw("Horizontal");    // returns float between 1 and -1 related to input. see Edit --> Proj settings --> Input
         Vector3 _moveVec = transform.forward * Input.GetAxisRaw("Vertical");
-        movement = (_moveHor + _moveVec).normalized;
+        if (GrappleGun.grappling == true)
+        {
+            movement = Vector3.zero;
+        }
+        else
+        {
+            movement = (_moveHor + _moveVec).normalized;
+        }
 
         // Calculate rotation
         float _yRot = Input.GetAxisRaw("Mouse X");                              // mouse X axis is left/right, when we move mouse left/right, we look around our Y axis (left/right)
