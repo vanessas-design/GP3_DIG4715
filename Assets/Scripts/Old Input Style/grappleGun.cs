@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class grappleGun : MonoBehaviour
 {
-    //private LineRenderer lr;
+    private LineRenderer lr;
     public bool grappling = false;
     private int grappleRange = 15;
     private float grappleDelay = 0.15f;
@@ -39,7 +39,7 @@ public class grappleGun : MonoBehaviour
 
     void Awake()
     {
-        //lr = GetComponent<LineRenderer>();
+        lr = GetComponent<LineRenderer>();
     }
 
     // Update is called once per frame
@@ -69,6 +69,9 @@ public class grappleGun : MonoBehaviour
                 grappleDelay -= Time.deltaTime;
             }
 
+            lr.SetPosition(0, gunTip.transform.position);
+            lr.SetPosition(1, grapplePoint.transform.position);
+            
             deltaX = player.transform.position.x - grapplePoint.transform.position.x;
             deltaY = player.transform.position.y - grapplePoint.transform.position.y;
             deltaZ = player.transform.position.z - grapplePoint.transform.position.z;
@@ -94,15 +97,9 @@ public class grappleGun : MonoBehaviour
             grappling = true;
             grapplingText.text = "Grappling: " + grappling.ToString();
             grappleDelay = 0.5f;
-            /*
-            player.AddComponent<SpringJoint>();
-            spring = player.GetComponent<SpringJoint>();
-            spring.autoConfigureConnectedAnchor = false;
-            spring.connectedAnchor = gunTip.transform.position;
-            spring.connectedBody = hit.rigidbody;
-            spring.maxDistance = 5;
-            spring.minDistance = 3;
-            */
+
+            lr.SetPosition(0, gunTip.transform.position);
+            lr.SetPosition(1, hit.transform.position);
 
             grapplePoint = hit.rigidbody;
             deltaX = player.transform.position.x - grapplePoint.transform.position.x;
@@ -117,6 +114,8 @@ public class grappleGun : MonoBehaviour
         grappling = false;
         grapplingText.text = "Grappling: " + grappling.ToString();
         grapplePoint = null;
+        lr.SetPosition(0, gunTip.transform.position);
+        lr.SetPosition(1, gunTip.transform.position);
         springForce = 0;
         springDirection = Vector3.zero;
     }
