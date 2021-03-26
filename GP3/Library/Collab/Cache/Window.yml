@@ -14,8 +14,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - .collabignore
+    - Assets/Models/KitchenShelf.fbx
+    - Assets/Models/KitchenShelf.fbx.meta
+    - Assets/Scenes/KitchenLevel.unity
+    - Assets/Scenes/KitchenLevel.unity.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_AlbedoTransparency.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_AlbedoTransparency.png.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_Emission.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_Emission.png.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_MetallicSmoothness.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_MetallicSmoothness.png.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_Normal.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_Normal.png.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_AlbedoTransparency.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_AlbedoTransparency.png.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_Emission.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_Emission.png.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_MetallicSmoothness.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_MetallicSmoothness.png.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_Normal.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_Normal.png.meta
+    - Packages/manifest.json
+    - Packages/packages-lock.json
+    - ProjectSettings/ProjectVersion.txt
     - 
-    m_Values: 01
+    m_Values: 00000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
