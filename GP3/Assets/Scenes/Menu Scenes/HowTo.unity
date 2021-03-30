@@ -188,7 +188,7 @@ MonoBehaviour:
     Grapple Gun: Q or B on Controller
 
     Block Placement/Removal:
-    E or LT add/RT to remove '
+    E or LB add/ R or RB to remove '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -262,10 +262,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -527.10706, w: -109.06073}
   m_textInfo:
     textComponent: {fileID: 5972399}
-    characterCount: 164
+    characterCount: 170
     spriteCount: 0
-    spaceCount: 28
-    wordCount: 30
+    spaceCount: 31
+    wordCount: 32
     linkCount: 0
     lineCount: 4
     pageCount: 1
