@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7258251585148410982}
   - component: {fileID: 5986874662299161539}
   - component: {fileID: 8426605992064591625}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spoon
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

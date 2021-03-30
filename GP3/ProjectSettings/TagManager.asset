@@ -10,6 +10,7 @@ TagManager:
   - Teleporter2
   - Teleporter3
   - TeleporterHome
+  - Ground
   layers:
   - Default
   - TransparentFX

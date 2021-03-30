@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 99604947661353225}
   - component: {fileID: 3949100216807259820}
   - component: {fileID: 1237068163479636582}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fork
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

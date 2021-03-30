@@ -25,9 +25,12 @@ public class playerController : MonoBehaviour
     private bool jumpKeyPressed = false;
     private bool isJumping = false;
 
+    [SerializeField]
+    private grappleGun GrappleGun;
+
     //Block placement and removal variables
     private throwableScript ThrowableScript;
-    private static int ammoCount = 3;
+    private int ammoCount = 3;
     [SerializeField]
     private Text ammoText;
     private Vector3 raycastLine;
@@ -41,7 +44,8 @@ public class playerController : MonoBehaviour
     private static bool stage2 = false;
     private static bool stage3 = false;
     private Scene activeScene;
-
+    [SerializeField]
+    private GameObject MacGuffin;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +54,29 @@ public class playerController : MonoBehaviour
         cam = Camera.main;
         activeScene = SceneManager.GetActiveScene();
         ammoText.text = "Ammo: " + ammoCount.ToString();
+        cameraForward = Camera.main.transform.forward;
+        //spawning in the MacGuffin
+        if (activeScene.name == "Level1")
+        {
+            if (stage1 == false)
+            {
+                Instantiate(MacGuffin, new Vector3 (-5, 0, 14), Quaternion.identity);
+            }
+        }
+        else if (activeScene.name == "Level2")
+        {
+            if (stage2 == false)
+            {
+                Instantiate(MacGuffin, new Vector3 (3, 0, 5), Quaternion.identity);
+            }   
+        }
+        else if (activeScene.name == "Level3")
+        {
+            if (stage3 == false)
+            {
+                Instantiate(MacGuffin, new Vector3 (-4, 0.5f, 7), Quaternion.identity);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -57,6 +84,10 @@ public class playerController : MonoBehaviour
     {
         movementStats();
         endState();
+        if (Input.GetKeyDown("escape"))
+        {
+            Application.Quit();
+        }
         
     }
 
@@ -124,7 +155,7 @@ public class playerController : MonoBehaviour
         }
         else if (other.tag == "MacGuffin")
         {
-            MacGuffin(other.gameObject);
+            MacGuffinCollection(other.gameObject);
         }
         else
         {
@@ -139,7 +170,14 @@ public class playerController : MonoBehaviour
         // Calculate movement
         Vector3 _moveHor = transform.right * Input.GetAxisRaw("Horizontal");    // returns float between 1 and -1 related to input. see Edit --> Proj settings --> Input
         Vector3 _moveVec = transform.forward * Input.GetAxisRaw("Vertical");
-        movement = (_moveHor + _moveVec).normalized;
+        if (GrappleGun.grappling == true)
+        {
+            movement = Vector3.zero;
+        }
+        else
+        {
+            movement = (_moveHor + _moveVec).normalized;
+        }
 
         // Calculate rotation
         float _yRot = Input.GetAxisRaw("Mouse X");                              // mouse X axis is left/right, when we move mouse left/right, we look around our Y axis (left/right)
@@ -238,7 +276,7 @@ public class playerController : MonoBehaviour
     {
         if(stage1 && stage2 && stage3)
         {
-            ammoCount = 3;
+            //ammoCount = 3;
             stage1 = false;
             stage2 = false;
             stage3 = false;
@@ -246,11 +284,11 @@ public class playerController : MonoBehaviour
         }
         else if (transform.position.y < -50.0f)
         {
-            ammoCount = 3;
+            //ammoCount = 3;
             SceneManager.LoadScene(activeScene.name);
         }
     }
-    public void MacGuffin(GameObject other)
+    public void MacGuffinCollection(GameObject other)
     {
         if (activeScene.name == "Level1")
             {

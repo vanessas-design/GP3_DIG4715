@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 3774677488435031039}
   - component: {fileID: 1407003681840537397}
   - component: {fileID: 308280818937293406}
-  m_Layer: 0
+  - component: {fileID: 6259575658036546602}
+  m_Layer: 10
   m_Name: GrappleSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,6 +96,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98fd805464ff957409bbeb8cee90d7a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &6259575658036546602
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614268648985083616}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 14
+  m_CollisionDetection: 0
 --- !u!1 &6421036156507126982
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,7 +124,7 @@ GameObject:
   - component: {fileID: 46568392286143647}
   - component: {fileID: 5168235917664551780}
   - component: {fileID: 308280818921443460}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pSphere2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

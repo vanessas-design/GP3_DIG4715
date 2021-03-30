@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1887919150567378624}
   - component: {fileID: 3286756793307808101}
   - component: {fileID: 754371261293278639}
-  m_Layer: 0
+  - component: {fileID: 4006443062096647476}
+  m_Layer: 8
   m_Name: WoodenSpoon
-  m_TagString: Untagged
+  m_TagString: MacGuffin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4006443062096647476
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259016518583817338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5076798556035486163, guid: fa42a8fbc5861a843864d4c4c69b55d2, type: 3}

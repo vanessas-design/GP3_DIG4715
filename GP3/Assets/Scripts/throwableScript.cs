@@ -17,19 +17,33 @@ public class throwableScript : MonoBehaviour
     public void Launch(Vector3 direction, float force)
     {
         rigidbody.AddForce(direction * force);
+        Invoke("blockStop", .0625f);
     }
     private void OnCollisionEnter(Collision col)
     {
         if(col.collider.gameObject.tag == "Ground")
         {
-            Destroy(GetComponent<Rigidbody>());
+            blockStop();
         }
         else if(col.collider.gameObject.layer == 8)
         {
-            Destroy(GetComponent<Rigidbody>());
+            blockStop();
         }
         else if(col.collider.gameObject.layer == 9)
         {
+            blockStop();
+        }
+        else if(col.collider.gameObject.layer == 10)
+        {
+            blockStop();
+        }
+    }
+
+    private void blockStop()
+    {
+        if (GetComponent<Rigidbody>() != null)
+        {
+            rigidbody.velocity = Vector3.zero;
             Destroy(GetComponent<Rigidbody>());
         }
     }

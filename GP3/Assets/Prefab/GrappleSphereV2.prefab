@@ -22,7 +22,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5927935344823090801}
   - component: {fileID: 5927935344823090800}
-  m_Layer: 0
+  - component: {fileID: 7561339971086685455}
+  m_Layer: 10
   m_Name: GrappleSphereV2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,6 +59,22 @@ CapsuleCollider:
   m_Height: 0.5
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7561339971086685455
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5927935344823090815}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 14
+  m_CollisionDetection: 0
 --- !u!114 &5927935345178257595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +153,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 98fcd79addc0a134abda0e68d9280e66, type: 3}
       propertyPath: m_Name
       value: GrappleSphere
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 98fcd79addc0a134abda0e68d9280e66, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6727007405964328823, guid: 98fcd79addc0a134abda0e68d9280e66, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98fcd79addc0a134abda0e68d9280e66, type: 3}
