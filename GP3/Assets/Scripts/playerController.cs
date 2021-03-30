@@ -55,6 +55,9 @@ public class playerController : MonoBehaviour
     [SerializeField]
     private GameObject MacGuffin;
 
+    [SerializeField]
+    private Animator Animation;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -95,6 +98,30 @@ public class playerController : MonoBehaviour
         if (Input.GetKeyDown("escape"))
         {
             Application.Quit();
+        }
+        if (movement == Vector3.zero)
+        {
+            Animation.SetInteger ("intController", 0);
+        }
+        if (movement != Vector3.zero)
+        {
+            Animation.SetInteger ("intController", 1);
+        }
+        if (Input.GetAxisRaw("Jump") != 0)
+        {
+            Animation.SetInteger ("intController", 2);
+        }
+        if (Input.GetAxisRaw("Fire1") != 0)                                     // this axis will be != 0 if the 'e' key is pressed
+        {   
+            Animation.SetInteger ("intController", 3);
+        }
+        if (Input.GetAxisRaw("Fire2") != 0)                                     // this axis will be != 0 if the 'e' key is pressed
+        {
+            Animation.SetInteger ("intController", 3);
+        }
+        if (movement == Vector3.zero && GrappleGun.grappling == true)                                     // this axis will be != 0 if the 'e' key is pressed
+        {
+            Animation.SetInteger ("intController", 4);
         }
         
     }
