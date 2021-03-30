@@ -6,6 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class playerController : MonoBehaviour
 {
+    //Audio code
+    public AudioSource musicSource;
+
+    public AudioClip musicClipLose;
+    public AudioClip musicClipJump;
+    public AudioClip musicClipMac;
+    public AudioClip musicClipBlock;
+
     [SerializeField]
     private float lookSensitivity = 3f;
     private Vector3 movement;
@@ -106,6 +114,8 @@ public class playerController : MonoBehaviour
             {
                 jumpKeyPressed = true;
                 jump();
+                musicSource.clip = musicClipJump;
+                musicSource.Play();
             }
         } else if (jumpKeyPressed)
         {
@@ -119,6 +129,8 @@ public class playerController : MonoBehaviour
             {
                 fireKeyPressed = true;
                 deployToy();
+                musicSource.clip = musicClipBlock;
+                musicSource.Play();
             }
         } else if (fireKeyPressed)
         {
@@ -156,6 +168,8 @@ public class playerController : MonoBehaviour
         else if (other.tag == "MacGuffin")
         {
             MacGuffinCollection(other.gameObject);
+            musicSource.clip = musicClipMac;
+            musicSource.Play();
         }
         else
         {
