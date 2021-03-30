@@ -106,7 +106,7 @@ public class playerController : MonoBehaviour
         }
 
         endState();
-        if (Input.GetKeyDown("escape") && paused == false)
+        if (Input.GetAxisRaw("Cancel") != 0 && paused == false)
         {
             paused = true;
             Instantiate(pauseScreen);
