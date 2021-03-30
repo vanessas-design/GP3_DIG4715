@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame ()
     {
+        print("HowTo");
         SceneManager.LoadScene("HowTo");
     }
 
