@@ -172,6 +172,8 @@ MonoBehaviour:
   blockPlace: {fileID: 6700356107201265710, guid: 673001a678801e84ba43bdd6d2fb5ae6, type: 3}
   MacGuffin: {fileID: 1259016518583817338, guid: e02a2ba537ca4e643acde40b159ebec6, type: 3}
   Animation: {fileID: 796263242}
+  pauseScreen: {fileID: 749563883299659001, guid: 7f5848d21f5b0404c88a5b073beb6bda, type: 3}
+  paused: 0
 --- !u!54 &20460365
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7780,7 +7782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -8369,7 +8371,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 85441c93da789eb48842b62066d63552, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8446,7 +8448,7 @@ LineRenderer:
     textureMode: 0
     shadowBias: 0.5
     generateLightingData: 0
-  m_UseWorldSpace: 0
+  m_UseWorldSpace: 1
   m_Loop: 0
 --- !u!1 &1885749890
 GameObject:

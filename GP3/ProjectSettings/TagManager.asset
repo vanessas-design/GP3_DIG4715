@@ -11,6 +11,7 @@ TagManager:
   - Teleporter3
   - TeleporterHome
   - Ground
+  - Button1
   layers:
   - Default
   - TransparentFX

@@ -58,6 +58,11 @@ public class playerController : MonoBehaviour
     [SerializeField]
     private Animator Animation;
 
+    [SerializeField]
+    private GameObject pauseScreen;
+
+    public bool paused = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -88,16 +93,23 @@ public class playerController : MonoBehaviour
                 Instantiate(MacGuffin, new Vector3 (-4, 0.5f, 7), Quaternion.identity);
             }
         }
+
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
     {
-        movementStats();
-        endState();
-        if (Input.GetKeyDown("escape"))
+        if (paused == false)
         {
-            Application.Quit();
+            movementStats();
+        }
+
+        endState();
+        if (Input.GetKeyDown("escape") && paused == false)
+        {
+            paused = true;
+            Instantiate(pauseScreen);
         }
         if (movement == Vector3.zero)
         {
@@ -123,7 +135,6 @@ public class playerController : MonoBehaviour
         {
             Animation.SetInteger ("intController", 4);
         }
-        
     }
 
     void FixedUpdate()
@@ -321,20 +332,24 @@ public class playerController : MonoBehaviour
             stage1 = false;
             stage2 = false;
             stage3 = false;
-            SceneManager.LoadScene("winScene");
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("Win");
         }
-        else if (transform.position.y < -50.0f)
+        else if (transform.position.y < -15.0f)
         {
             //ammoCount = 3;
-            SceneManager.LoadScene(activeScene.name);
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("Lose");
         }
     }
     public void MacGuffinCollection(GameObject other)
     {
-        if (activeScene.name == "Level1")
+        if (activeScene.name == "KitchenLevel")
             {
                 Destroy(other);
                 stage1 = true;
+                Cursor.lockState = CursorLockMode.None;
+                SceneManager.LoadScene("Win");
             }
             else if (activeScene.name == "Level2")
             {
