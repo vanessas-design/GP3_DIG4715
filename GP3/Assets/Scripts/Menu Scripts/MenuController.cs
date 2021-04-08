@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class menuController : MonoBehaviour
+public class MenuController : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

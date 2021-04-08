@@ -175,8 +175,6 @@ MonoBehaviour:
     - Assets/Prefab.meta
     - Assets/Prefab/BLAKEMODELRIGGED2.prefab
     - Assets/Prefab/BLAKEMODELRIGGED2.prefab.meta
-    - Assets/Prefab/Bulk Block.prefab
-    - Assets/Prefab/Bulk Block.prefab.meta
     - Assets/Prefab/Cabinet.prefab
     - Assets/Prefab/Cabinet.prefab.meta
     - Assets/Prefab/Cookie.prefab
@@ -187,14 +185,6 @@ MonoBehaviour:
     - Assets/Prefab/GrappleSphere.prefab.meta
     - Assets/Prefab/GrappleSphereV2.prefab
     - Assets/Prefab/GrappleSphereV2.prefab.meta
-    - Assets/Prefab/Jumping Block Large.prefab
-    - Assets/Prefab/Jumping Block Large.prefab.meta
-    - Assets/Prefab/Jumping Block Med.prefab
-    - Assets/Prefab/Jumping Block Med.prefab.meta
-    - Assets/Prefab/Jumping Blocks Sm.prefab
-    - Assets/Prefab/Jumping Blocks Sm.prefab.meta
-    - Assets/Prefab/KirbyIsTheMacGuffin.prefab
-    - Assets/Prefab/KirbyIsTheMacGuffin.prefab.meta
     - Assets/Prefab/KitchenIsland.prefab
     - Assets/Prefab/KitchenIsland.prefab.meta
     - Assets/Prefab/PauseScreen.prefab
@@ -209,14 +199,29 @@ MonoBehaviour:
     - Assets/Prefab/Platform3.prefab.meta
     - Assets/Prefab/Player.prefab
     - Assets/Prefab/Player.prefab.meta
+    - Assets/Prefab/Prefabs (Old).meta
+    - Assets/Prefab/Prefabs (Old)/Bulk Block.prefab
+    - Assets/Prefab/Prefabs (Old)/Bulk Block.prefab.meta
+    - Assets/Prefab/Prefabs (Old)/Jumping Block Large.prefab
+    - Assets/Prefab/Prefabs (Old)/Jumping Block Large.prefab.meta
+    - Assets/Prefab/Prefabs (Old)/Jumping Block Med.prefab
+    - Assets/Prefab/Prefabs (Old)/Jumping Block Med.prefab.meta
+    - Assets/Prefab/Prefabs (Old)/Jumping Blocks Sm.prefab
+    - Assets/Prefab/Prefabs (Old)/Jumping Blocks Sm.prefab.meta
+    - Assets/Prefab/Prefabs (Old)/KirbyIsTheMacGuffin.prefab
+    - Assets/Prefab/Prefabs (Old)/KirbyIsTheMacGuffin.prefab.meta
+    - Assets/Prefab/Prefabs (Old)/Player (Old).prefab
+    - Assets/Prefab/Prefabs (Old)/Player (Old).prefab.meta
+    - Assets/Prefab/Prefabs (Old)/Teleporter.prefab
+    - Assets/Prefab/Prefabs (Old)/Teleporter.prefab.meta
+    - Assets/Prefab/Projectile.prefab
+    - Assets/Prefab/Projectile.prefab.meta
     - Assets/Prefab/Sink.prefab
     - Assets/Prefab/Sink.prefab.meta
     - Assets/Prefab/SliceofBread.prefab
     - Assets/Prefab/SliceofBread.prefab.meta
     - Assets/Prefab/Spoon.prefab
     - Assets/Prefab/Spoon.prefab.meta
-    - Assets/Prefab/Teleporter.prefab
-    - Assets/Prefab/Teleporter.prefab.meta
     - Assets/Prefab/Toaster.prefab
     - Assets/Prefab/Toaster.prefab.meta
     - Assets/Prefab/WoodenSpoon.prefab
@@ -270,32 +275,38 @@ MonoBehaviour:
     - Assets/Scenes/winScene.unity
     - Assets/Scenes/winScene.unity.meta
     - Assets/Scripts.meta
-    - Assets/Scripts/GrapplePointR.cs
-    - Assets/Scripts/GrapplePointR.cs.meta
-    - Assets/Scripts/GrapplePointR1.cs
-    - Assets/Scripts/GrapplePointR1.cs.meta
+    - Assets/Scripts/Environmental Scripts.meta
+    - Assets/Scripts/Environmental Scripts/GrapplePointR.cs
+    - Assets/Scripts/Environmental Scripts/GrapplePointR.cs.meta
+    - Assets/Scripts/Environmental Scripts/GrapplePointR1.cs
+    - Assets/Scripts/Environmental Scripts/GrapplePointR1.cs.meta
+    - Assets/Scripts/Environmental Scripts/SkySphere.cs
+    - Assets/Scripts/Environmental Scripts/SkySphere.cs.meta
+    - Assets/Scripts/Environmental Scripts/SpoonRotate.cs
+    - Assets/Scripts/Environmental Scripts/SpoonRotate.cs.meta
+    - Assets/Scripts/GrappleGun.cs
+    - Assets/Scripts/GrappleGun.cs.meta
     - Assets/Scripts/Menu Scripts.meta
     - Assets/Scripts/Menu Scripts/Lose.cs
     - Assets/Scripts/Menu Scripts/Lose.cs.meta
     - Assets/Scripts/Menu Scripts/MainMenu.cs
     - Assets/Scripts/Menu Scripts/MainMenu.cs.meta
+    - Assets/Scripts/Menu Scripts/MenuController.cs
+    - Assets/Scripts/Menu Scripts/MenuController.cs.meta
+    - Assets/Scripts/Menu Scripts/PauseController.cs
+    - Assets/Scripts/Menu Scripts/PauseController.cs.meta
     - Assets/Scripts/Menu Scripts/Play.cs
     - Assets/Scripts/Menu Scripts/Play.cs.meta
     - Assets/Scripts/Menu Scripts/Win.cs
     - Assets/Scripts/Menu Scripts/Win.cs.meta
-    - Assets/Scripts/PauseController.cs
-    - Assets/Scripts/PauseController.cs.meta
-    - Assets/Scripts/SkySphere.cs
-    - Assets/Scripts/SkySphere.cs.meta
-    - Assets/Scripts/SpoonRotate.cs
-    - Assets/Scripts/SpoonRotate.cs.meta
-    - Assets/Scripts/grappleGun.cs
-    - Assets/Scripts/grappleGun.cs.meta
-    - Assets/Scripts/menuController.cs.meta
-    - Assets/Scripts/playerController.cs
-    - Assets/Scripts/playerController.cs.meta
-    - Assets/Scripts/throwableScript.cs
-    - Assets/Scripts/throwableScript.cs.meta
+    - Assets/Scripts/PlayerController.cs
+    - Assets/Scripts/PlayerController.cs.meta
+    - Assets/Scripts/Projectile Scripts/ProjectileScript.cs
+    - Assets/Scripts/Projectile Scripts/ProjectileScript.cs.meta
+    - Assets/Scripts/Projectile Scripts/ProjectileSourceScript.cs
+    - Assets/Scripts/Projectile Scripts/ProjectileSourceScript.cs.meta
+    - Assets/Scripts/ThrowableScript.cs
+    - Assets/Scripts/ThrowableScript.cs.meta
     - Assets/TextMesh Pro.meta
     - Assets/TextMesh Pro/Documentation.meta
     - Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf
@@ -603,7 +614,7 @@ MonoBehaviour:
     - ProjectSettings/VFXManager.asset
     - ProjectSettings/VersionControlSettings.asset
     - 
-    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

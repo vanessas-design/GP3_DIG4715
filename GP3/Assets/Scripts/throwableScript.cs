@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class throwableScript : MonoBehaviour
+public class ThrowableScript : MonoBehaviour
 {
     Rigidbody rigidbody;
 

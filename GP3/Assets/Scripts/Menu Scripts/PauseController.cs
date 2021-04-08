@@ -10,7 +10,7 @@ public class PauseController : MonoBehaviour
     [SerializeField]
     private GameObject parent;
 
-    private playerController PlayerController;
+    private PlayerController playerController;
     private GameObject player;
 
     // Start is called before the first frame update
@@ -21,21 +21,21 @@ public class PauseController : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(GameObject.FindWithTag("Button1"));
         player = GameObject.FindWithTag("Player");
-        PlayerController = player.GetComponent<playerController>();
+        playerController = player.GetComponent<PlayerController>();
     }
 
     public void Play()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1.0f;
-        PlayerController.paused = false;
+        playerController.paused = false;
         Destroy(parent);
     }
     
     public void MainMenu()
     {
         Time.timeScale = 1.0f;
-        PlayerController.paused = false;
+        playerController.paused = false;
         SceneManager.LoadScene("Menu");
     }
 

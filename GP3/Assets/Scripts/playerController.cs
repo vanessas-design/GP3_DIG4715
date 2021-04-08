@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class playerController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     //Audio code
     public AudioSource musicSource;
@@ -34,10 +34,10 @@ public class playerController : MonoBehaviour
     private bool isJumping = false;
 
     [SerializeField]
-    private grappleGun GrappleGun;
+    private GrappleGun grappleGun;
 
     //Block placement and removal variables
-    private throwableScript ThrowableScript;
+    private ThrowableScript throwableScript;
     private int ammoCount = 3;
     [SerializeField]
     private Text ammoText;
@@ -131,7 +131,7 @@ public class playerController : MonoBehaviour
         {
             Animation.SetInteger ("intController", 3);
         }
-        if (movement == Vector3.zero && GrappleGun.grappling == true)                                     // this axis will be != 0 if the 'e' key is pressed
+        if (movement == Vector3.zero && grappleGun.grappling == true)                                     // this axis will be != 0 if the 'e' key is pressed
         {
             Animation.SetInteger ("intController", 4);
         }
@@ -222,7 +222,7 @@ public class playerController : MonoBehaviour
         // Calculate movement
         Vector3 _moveHor = transform.right * Input.GetAxisRaw("Horizontal");    // returns float between 1 and -1 related to input. see Edit --> Proj settings --> Input
         Vector3 _moveVec = transform.forward * Input.GetAxisRaw("Vertical");
-        if (GrappleGun.grappling == true)
+        if (grappleGun.grappling == true)
         {
             movement = Vector3.zero;
         }
@@ -295,11 +295,11 @@ public class playerController : MonoBehaviour
         //No terrain too close. Can place block.
         else
         {
-            GameObject _projectileObject = Instantiate(blockPlace, rb.position + cameraForward + Vector3.up * .3f, Quaternion.identity); // local variables start w/ and underscore
+            GameObject _projectileObject = Instantiate(blockPlace, rb.position + cameraForward + Vector3.up * .2f, Quaternion.identity); // local variables start w/ and underscore
             ammoCount--;
             ammoText.text = "Ammo: " + ammoCount.ToString();
-            ThrowableScript = _projectileObject.GetComponent<throwableScript>();
-            ThrowableScript.Launch(cameraForward, 2000);
+            throwableScript = _projectileObject.GetComponent<ThrowableScript>();
+            throwableScript.Launch(cameraForward, 2000);
         }
     }
     public void removeToy()
@@ -337,9 +337,7 @@ public class playerController : MonoBehaviour
         }
         else if (transform.position.y < -15.0f)
         {
-            //ammoCount = 3;
-            Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene("Lose");
+            Loss();
         }
     }
     public void MacGuffinCollection(GameObject other)
@@ -381,5 +379,11 @@ public class playerController : MonoBehaviour
         {
             SceneManager.LoadScene("MainScene");
         }
+    }
+    public void Loss()
+    {
+        //ammoCount = 3;
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene("Lose");
     }
 }

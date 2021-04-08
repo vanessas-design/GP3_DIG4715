@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class grappleGun : MonoBehaviour
+public class GrappleGun : MonoBehaviour
 {
     private LineRenderer lr;
     public bool grappling = false;
