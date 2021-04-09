@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grappling: 0
-  gunTip: {fileID: 3675465226036888988}
+  gunTip: {fileID: 2228111232890059855}
   player: {fileID: 3675465225281888745}
   playerRB: {fileID: 3675465225281888751}
   cam: {fileID: 3675465225180481353}
@@ -339,7 +339,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 85441c93da789eb48842b62066d63552, type: 2}
+  - {fileID: 2100000, guid: fa453f56a0cadd84997828973a1ba041, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -413,7 +413,7 @@ LineRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     shadowBias: 0.5
     generateLightingData: 0
   m_UseWorldSpace: 1
@@ -568,5 +568,10 @@ Transform:
 --- !u!95 &6946804050629461171 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6010582964138480562, guid: 736edc743d3001644856e919ae1a79b5, type: 3}
+  m_PrefabInstance: {fileID: 3675465225605125889}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2228111232890059855 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3308517874590985038, guid: 736edc743d3001644856e919ae1a79b5, type: 3}
   m_PrefabInstance: {fileID: 3675465225605125889}
   m_PrefabAsset: {fileID: 0}
