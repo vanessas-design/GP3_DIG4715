@@ -67,6 +67,13 @@ public class PlayerController : MonoBehaviour
     private bool onPlatform = false;
     private MovingBlocks movingBlocks;
 
+    [SerializeField]
+    private GameObject stage1Light;
+    [SerializeField]
+    private GameObject stage2Light;
+    [SerializeField]
+    private GameObject stage3Light;
+
 
     // Start is called before the first frame update
     void Start()
@@ -100,6 +107,22 @@ public class PlayerController : MonoBehaviour
         }
 
         Cursor.lockState = CursorLockMode.Locked;
+
+        if(activeScene.name == "HubLevel")
+        {
+            if(stage1 == true)
+            {
+                stage1Light.SetActive(false);
+            }
+            if(stage2 == true)
+            {
+                stage2Light.SetActive(false);
+            }
+            if(stage3 == true)
+            {
+                stage3Light.SetActive(false);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -387,32 +410,44 @@ public class PlayerController : MonoBehaviour
                 Destroy(other);
                 stage1 = true;
                 Cursor.lockState = CursorLockMode.None;
-                SceneManager.LoadScene("Win");
+                SceneManager.LoadScene("HubLevel");
             }
-            else if (activeScene.name == "Level2")
+            else if (activeScene.name == "BedRoomLevel")
             {
                 Destroy(other);
                 stage2 = true;
+                SceneManager.LoadScene("HubLevel");
             }
-            else if (activeScene.name == "Level3")
+            else if (activeScene.name == "PlayGroundLevel")
             {
                 Destroy(other);
                 stage3 = true;
+                SceneManager.LoadScene("HubLevel");
             }
+        
     }
     public void Teleport(string tag)
     {
         if (tag == "Teleporter1")
         {
-            SceneManager.LoadScene("Level1");
+            if (stage1 == false)
+            {
+                SceneManager.LoadScene("KitchenLevel");
+            }
         }
         else if (tag == "Teleporter2")
         {
-            SceneManager.LoadScene("Level2");
+            if (stage2 == false)
+            {
+                SceneManager.LoadScene("BedRoomLevel");
+            }
         }
         else if (tag == "Teleporter3")
         {
-            SceneManager.LoadScene("Level3");
+            if (stage3 == false)
+            {
+                SceneManager.LoadScene("PlayGroundLevel");
+            }
         }
         //return to hub world
         else if (tag == "TeleporterHome")

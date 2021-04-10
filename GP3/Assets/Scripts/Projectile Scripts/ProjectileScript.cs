@@ -26,7 +26,7 @@ public class ProjectileScript : MonoBehaviour
     {
         rigidbody.AddForce(direction * force);
 
-        Invoke("SelfDestruct", 10.0f);
+        Invoke("SelfDestruct", 1.0f);
     }
     private void OnCollisionEnter(Collision col)
     {

@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu Scenes/Lose.unity
     guid: 4e1db4a60e58cc140a05f73c841c70b9
+  - enabled: 1
+    path: Assets/Scenes/HubLevel.unity
+    guid: 4ca47cdcec6b0ce418c493bf2c18d041
+  - enabled: 1
+    path: Assets/Scenes/PlayGroundLevel.unity
+    guid: f218f3da1b5326946bbdb859dea10ad4
+  - enabled: 1
+    path: Assets/Scenes/BedRoomLevel.unity
+    guid: 12a5cd6cca7f63f4da0630f47ef217d8
   m_configObjects: {}
