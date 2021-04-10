@@ -52,6 +52,8 @@ public class ProjectileSourceScript : MonoBehaviour
 
         GameObject _projectileObject = Instantiate(projectileObject, transform.position + raycastLine, Quaternion.identity); // local variables start w/ and underscore
 
+        _projectileObject.transform.rotation = gameObject.transform.rotation;
+        
         projectileScript = _projectileObject.GetComponent<ProjectileScript>();
         projectileScript.Launch(raycastLine, projectileSpeed);
     }

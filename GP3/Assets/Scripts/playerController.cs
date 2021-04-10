@@ -63,6 +63,11 @@ public class PlayerController : MonoBehaviour
 
     public bool paused = false;
 
+    private Rigidbody movingPlatformRigidBody;
+    private bool onPlatform = false;
+    private MovingBlocks movingBlocks;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -144,6 +149,16 @@ public class PlayerController : MonoBehaviour
         {
             move(movement);      // in FixedUpdate because we want to apply force at regular intervals
         }
+        else
+        {
+            if (onPlatform)
+            {
+                if (movingBlocks.isWaiting == false)
+                {
+                    rb.MovePosition(rb.position + movingBlocks.direction * Time.deltaTime * movingBlocks.speed);
+                }
+            }
+        }
 
         //jumping
         if (Input.GetAxisRaw("Jump") != 0)
@@ -203,6 +218,13 @@ public class PlayerController : MonoBehaviour
         {
             isJumping = false;
         }
+        else if (other.tag == "mp")
+        {
+            isJumping = false;
+            movingPlatformRigidBody = other.GetComponent<Rigidbody>();
+            onPlatform = true;
+            movingBlocks = other.GetComponent<MovingBlocks>();
+        }
         else if (other.tag == "MacGuffin")
         {
             MacGuffinCollection(other.gameObject);
@@ -212,6 +234,14 @@ public class PlayerController : MonoBehaviour
         else
         {
             Teleport(other.tag);
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "mp")
+        {
+            onPlatform = false;
         }
     }
 
@@ -253,7 +283,17 @@ public class PlayerController : MonoBehaviour
 
     public void move(Vector3 moveVector)
     {
-        rb.MovePosition(rb.position + moveVector * Time.deltaTime * speed);    // This is applying a force to the rigidbody, which is a physics calculation
+        if (onPlatform)
+        {
+            if (movingBlocks.isWaiting == false)
+            {
+                rb.MovePosition(rb.position + moveVector * Time.deltaTime * speed + movingBlocks.direction * Time.deltaTime * movingBlocks.speed);
+            }
+        }
+        else
+        {
+            rb.MovePosition(rb.position + moveVector * Time.deltaTime * speed);    // This is applying a force to the rigidbody, which is a physics calculation
+        }
     }
     public void rotatePlayer(Vector3 rotationVector)
     {
