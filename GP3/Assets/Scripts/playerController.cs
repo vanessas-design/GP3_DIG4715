@@ -74,6 +74,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private GameObject stage3Light;
 
+    private static bool firstHubVisit = true;
+
 
     // Start is called before the first frame update
     void Start()
@@ -83,6 +85,8 @@ public class PlayerController : MonoBehaviour
         activeScene = SceneManager.GetActiveScene();
         ammoText.text = "Ammo: " + ammoCount.ToString();
         cameraForward = Camera.main.transform.forward;
+
+        /*
         //spawning in the MacGuffin
         if (activeScene.name == "Level1")
         {
@@ -105,6 +109,7 @@ public class PlayerController : MonoBehaviour
                 Instantiate(MacGuffin, new Vector3 (-4, 0.5f, 7), Quaternion.identity);
             }
         }
+        */
 
         Cursor.lockState = CursorLockMode.Locked;
 
@@ -121,6 +126,10 @@ public class PlayerController : MonoBehaviour
             if(stage3 == true)
             {
                 stage3Light.SetActive(false);
+            }
+            if (firstHubVisit)
+            {
+                transform.position = new Vector3(0, 13, 0);
             }
         }
     }
@@ -428,6 +437,8 @@ public class PlayerController : MonoBehaviour
     }
     public void Teleport(string tag)
     {
+        firstHubVisit = false;
+
         if (tag == "Teleporter1")
         {
             if (stage1 == false)

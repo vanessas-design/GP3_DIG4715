@@ -17,7 +17,7 @@ public class ThrowableScript : MonoBehaviour
     public void Launch(Vector3 direction, float force)
     {
         rigidbody.AddForce(direction * force);
-        Invoke("blockStop", .0625f);
+        Invoke("blockStop", .05f);
     }
     private void OnCollisionEnter(Collision col)
     {

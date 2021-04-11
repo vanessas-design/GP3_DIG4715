@@ -422,7 +422,7 @@ MonoBehaviour:
   musicClipBlock: {fileID: 8300000, guid: 8e2ff6ef5fe1a0243937400ca77cc10e, type: 3}
   lookSensitivity: 3
   speed: 4
-  jumpForce: 4
+  jumpForce: 5
   grappleGun: {fileID: 3675465226036889058}
   ammoText: {fileID: 79422287}
   blockPlace: {fileID: 6700356107201265710, guid: 673001a678801e84ba43bdd6d2fb5ae6, type: 3}
