@@ -402,6 +402,7 @@ public class PlayerController : MonoBehaviour
             stage2 = false;
             stage3 = false;
             Cursor.lockState = CursorLockMode.None;
+            firstHubVisit = false;
             SceneManager.LoadScene("Win");
         }
         else if (transform.position.y < -15.0f)
