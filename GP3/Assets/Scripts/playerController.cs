@@ -332,7 +332,7 @@ public class PlayerController : MonoBehaviour
     }
     public void jump()
     {
-        if (!isJumping || grappleGun.grappling != true)
+        if (!isJumping && grappleGun.grappling != true)
         {
             isJumping = true;
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);

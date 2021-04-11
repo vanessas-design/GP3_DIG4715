@@ -373,7 +373,11 @@ PrefabInstance:
       objectReference: {fileID: 406620377}
     - target: {fileID: 3675465225281888750, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
       propertyPath: jumpForce
-      value: 12
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675465226036889058, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
+      propertyPath: grappleRange
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
