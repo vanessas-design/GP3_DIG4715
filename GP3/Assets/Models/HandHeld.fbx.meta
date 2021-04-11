@@ -3,7 +3,17 @@ guid: e5460e230af7810478d103badef5dae6
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HandHeld
+    second: {fileID: 2100000, guid: 12d9bae8ba47dae4a82bdecf958e74fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HandHeldButton
+    second: {fileID: 2100000, guid: 6459e94d2359eec479b523893eec8669, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
