@@ -890,6 +890,14 @@ PrefabInstance:
       propertyPath: ammoText
       value: 
       objectReference: {fileID: 515724339}
+    - target: {fileID: 3675465225281888750, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
+      propertyPath: blockPlace
+      value: 
+      objectReference: {fileID: 2722312712991898872, guid: 2b380a0b10b217d4cbf0e9402665448d, type: 3}
+    - target: {fileID: 3675465225281888751, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
 --- !u!1001 &1744506470

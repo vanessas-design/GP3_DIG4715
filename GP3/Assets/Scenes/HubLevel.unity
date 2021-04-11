@@ -15358,6 +15358,10 @@ PrefabInstance:
       propertyPath: stage3Light
       value: 
       objectReference: {fileID: 1244776707}
+    - target: {fileID: 3675465225281888750, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
+      propertyPath: blockPlace
+      value: 
+      objectReference: {fileID: 4228051892929218129, guid: bf2174f918f4514448fd5e566112aba7, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
 --- !u!1 &1828751309 stripped
