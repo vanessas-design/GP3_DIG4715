@@ -7,6 +7,7 @@ public class GrappleGun : MonoBehaviour
 {
     private LineRenderer lr;
     public bool grappling = false;
+    [SerializeField]
     private int grappleRange = 15;
     private float grappleDelay = 0.15f;
     

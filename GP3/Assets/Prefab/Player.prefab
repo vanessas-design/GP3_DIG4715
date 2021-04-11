@@ -430,6 +430,9 @@ MonoBehaviour:
   Animation: {fileID: 6946804050629461171}
   pauseScreen: {fileID: 749563883299659001, guid: 7f5848d21f5b0404c88a5b073beb6bda, type: 3}
   paused: 0
+  stage1Light: {fileID: 0}
+  stage2Light: {fileID: 0}
+  stage3Light: {fileID: 0}
 --- !u!82 &3675465225281888749
 AudioSource:
   m_ObjectHideFlags: 0
@@ -571,6 +574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grappling: 0
+  grappleRange: 10
   gunTip: {fileID: 2228111232890059855}
   player: {fileID: 3675465225281888745}
   playerRB: {fileID: 3675465225281888751}

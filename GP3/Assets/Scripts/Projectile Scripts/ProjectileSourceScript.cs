@@ -11,6 +11,7 @@ public class ProjectileSourceScript : MonoBehaviour
 
     [SerializeField]
     private GameObject projectileObject;
+    private GameObject childObject;
     private ProjectileScript projectileScript;
     [SerializeField]
     private int projectileSpeed;
@@ -52,9 +53,9 @@ public class ProjectileSourceScript : MonoBehaviour
 
         GameObject _projectileObject = Instantiate(projectileObject, transform.position + raycastLine, Quaternion.identity); // local variables start w/ and underscore
 
-        projectileObject.transform.rotation = gameObject.transform.rotation;
-
         projectileScript = _projectileObject.GetComponent<ProjectileScript>();
         projectileScript.Launch(raycastLine, projectileSpeed);
+
+        _projectileObject.transform.rotation = gameObject.transform.rotation;
     }
 }
