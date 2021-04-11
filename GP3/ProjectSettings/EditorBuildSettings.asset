@@ -12,21 +12,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu Scenes/HowTo.unity
     guid: ce87eb8170fd30148b1e7d079e451ea4
   - enabled: 1
-    path: Assets/Scenes/KitchenLevel.unity
-    guid: 476b8eedae1f6cc479ab0e370a8e05e5
-  - enabled: 1
-    path: Assets/Scenes/Menu Scenes/Win.unity
-    guid: 9f8f0124e64dd53478e422e2bc20c370
-  - enabled: 1
-    path: Assets/Scenes/Menu Scenes/Lose.unity
-    guid: 4e1db4a60e58cc140a05f73c841c70b9
-  - enabled: 1
     path: Assets/Scenes/HubLevel.unity
     guid: 4ca47cdcec6b0ce418c493bf2c18d041
+  - enabled: 1
+    path: Assets/Scenes/KitchenLevel.unity
+    guid: 476b8eedae1f6cc479ab0e370a8e05e5
   - enabled: 1
     path: Assets/Scenes/PlayGroundLevel.unity
     guid: f218f3da1b5326946bbdb859dea10ad4
   - enabled: 1
     path: Assets/Scenes/BedRoomLevel.unity
     guid: 12a5cd6cca7f63f4da0630f47ef217d8
+  - enabled: 1
+    path: Assets/Scenes/Menu Scenes/Lose.unity
+    guid: 4e1db4a60e58cc140a05f73c841c70b9
+  - enabled: 1
+    path: Assets/Scenes/Menu Scenes/Win.unity
+    guid: 9f8f0124e64dd53478e422e2bc20c370
   m_configObjects: {}
