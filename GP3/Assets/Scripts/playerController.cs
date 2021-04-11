@@ -317,10 +317,7 @@ public class PlayerController : MonoBehaviour
     {
         if (onPlatform)
         {
-            if (movingBlocks.isWaiting == false)
-            {
-                rb.MovePosition(rb.position + moveVector * Time.deltaTime * speed + movingBlocks.direction * Time.deltaTime * movingBlocks.speed);
-            }
+            rb.MovePosition(rb.position + moveVector * Time.deltaTime * speed + movingBlocks.direction * Time.deltaTime * movingBlocks.speed);
         }
         else
         {

@@ -88,6 +88,7 @@ public class MovingBlocks : MonoBehaviour
     }
     IEnumerator changeDelay()
     {
+        direction = Vector3.zero;
         yield return new WaitForSeconds(changeDirectionDelay);
         ChangeDestination();
         startTime = Time.time;
