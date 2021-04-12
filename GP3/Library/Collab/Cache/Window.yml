@@ -13,8 +13,910 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
-    m_Keys: []
-    m_Values: 
+    m_Keys:
+    - .collabignore
+    - Assets/Animations.meta
+    - Assets/Animations/BLAKEMODELRIGGED2.controller
+    - Assets/Animations/BLAKEMODELRIGGED2.controller.meta
+    - Assets/Animations/BlakeAction.anim
+    - Assets/Animations/BlakeAction.anim.meta
+    - Assets/Animations/BlakeGrapple.anim
+    - Assets/Animations/BlakeGrapple.anim.meta
+    - Assets/Animations/BlakeIdle.anim
+    - Assets/Animations/BlakeIdle.anim.meta
+    - Assets/Animations/BlakeJump.anim
+    - Assets/Animations/BlakeJump.anim.meta
+    - Assets/Animations/BlakeRun.anim
+    - Assets/Animations/BlakeRun.anim.meta
+    - Assets/Art.meta
+    - Assets/Art/Menu Art.meta
+    - Assets/Art/Menu Art/background 2.png
+    - Assets/Art/Menu Art/background 2.png.meta
+    - Assets/Art/Menu Art/background 3.png
+    - Assets/Art/Menu Art/background 3.png.meta
+    - Assets/Art/Menu Art/beautiful-pastel-background.png
+    - Assets/Art/Menu Art/beautiful-pastel-background.png.meta
+    - Assets/Art/Temp Art.meta
+    - Assets/Art/Temp Art/Ghetto Kirby.png.meta
+    - Assets/Art/Temp Art/Quit Butto.png.meta
+    - Assets/Art/Temp Art/Trashpile.png.meta
+    - Assets/Art/Temp Art/Try_again.png.meta
+    - Assets/Art/Temp Art/losescreen.jpg.meta
+    - Assets/Art/Temp Art/winscreen.jpg.meta
+    - Assets/Audio.meta
+    - Assets/Audio/BlockDrop.mp3
+    - Assets/Audio/BlockDrop.mp3.meta
+    - Assets/Audio/ButtonClick.mp3
+    - Assets/Audio/ButtonClick.mp3.meta
+    - Assets/Audio/DummyBGMusic.mp3
+    - Assets/Audio/DummyBGMusic.mp3.meta
+    - Assets/Audio/GP3gameaudio.wav
+    - Assets/Audio/GP3gameaudio.wav.meta
+    - Assets/Audio/Jump.mp3
+    - Assets/Audio/Jump.mp3.meta
+    - Assets/Audio/LoseSound.mp3
+    - Assets/Audio/LoseSound.mp3.meta
+    - Assets/Audio/MacguffinGrab (1).mp3
+    - Assets/Audio/MacguffinGrab (1).mp3.meta
+    - Assets/Audio/WinMusic.mp3
+    - Assets/Audio/WinMusic.mp3.meta
+    - Assets/Images.meta
+    - Assets/Material.meta
+    - Assets/Material/Bed.mat
+    - Assets/Material/Bed.mat.meta
+    - Assets/Material/BlakeModel.mat
+    - Assets/Material/BlakeModel.mat.meta
+    - Assets/Material/CabinetBody.mat
+    - Assets/Material/CabinetBody.mat.meta
+    - Assets/Material/CabinetCounterTop.mat
+    - Assets/Material/CabinetCounterTop.mat.meta
+    - Assets/Material/CabinetDoor.mat
+    - Assets/Material/CabinetDoor.mat.meta
+    - Assets/Material/Castle.mat
+    - Assets/Material/Castle.mat.meta
+    - Assets/Material/CookieBody.mat
+    - Assets/Material/CookieBody.mat.meta
+    - Assets/Material/CookieChip.mat
+    - Assets/Material/CookieChip.mat.meta
+    - Assets/Material/Flag.mat
+    - Assets/Material/Flag.mat.meta
+    - Assets/Material/Fork.mat
+    - Assets/Material/Fork.mat.meta
+    - Assets/Material/Frisbee.mat
+    - Assets/Material/Frisbee.mat.meta
+    - Assets/Material/GlassPlatform.mat
+    - Assets/Material/GlassPlatform.mat.meta
+    - Assets/Material/Grapple Plate.mat
+    - Assets/Material/Grapple Plate.mat.meta
+    - Assets/Material/GrapplePoint.mat
+    - Assets/Material/GrapplePoint.mat.meta
+    - Assets/Material/HandHeld.mat
+    - Assets/Material/HandHeld.mat.meta
+    - Assets/Material/HandHeldButton.mat
+    - Assets/Material/HandHeldButton.mat.meta
+    - Assets/Material/KitchenIsland.mat
+    - Assets/Material/KitchenIsland.mat.meta
+    - Assets/Material/KitchenShelfBody.mat
+    - Assets/Material/KitchenShelfBody.mat.meta
+    - Assets/Material/KitchenShelfClutter.mat
+    - Assets/Material/KitchenShelfClutter.mat.meta
+    - Assets/Material/NightStand.mat
+    - Assets/Material/NightStand.mat.meta
+    - Assets/Material/Pencil.mat
+    - Assets/Material/Pencil.mat.meta
+    - Assets/Material/Plate.mat
+    - Assets/Material/Plate.mat.meta
+    - Assets/Material/Platform1.mat
+    - Assets/Material/Platform1.mat.meta
+    - Assets/Material/Platform2.mat
+    - Assets/Material/Platform2.mat.meta
+    - Assets/Material/Platform3.mat
+    - Assets/Material/Platform3.mat.meta
+    - Assets/Material/PortalArch.mat
+    - Assets/Material/PortalArch.mat.meta
+    - Assets/Material/PortalFace.mat
+    - Assets/Material/PortalFace.mat.meta
+    - Assets/Material/Rock.mat
+    - Assets/Material/Rock.mat.meta
+    - Assets/Material/SandBoxV1.mat
+    - Assets/Material/SandBoxV1.mat.meta
+    - Assets/Material/SinkBody.mat
+    - Assets/Material/SinkBody.mat.meta
+    - Assets/Material/SinkCounterTop.mat
+    - Assets/Material/SinkCounterTop.mat.meta
+    - Assets/Material/SinkDoor.mat
+    - Assets/Material/SinkDoor.mat.meta
+    - Assets/Material/SinkSink.mat
+    - Assets/Material/SinkSink.mat.meta
+    - Assets/Material/SkySphere.mat
+    - Assets/Material/SkySphere.mat.meta
+    - Assets/Material/SliceofBread.mat
+    - Assets/Material/SliceofBread.mat.meta
+    - Assets/Material/Spoon.mat
+    - Assets/Material/Spoon.mat.meta
+    - Assets/Material/Temp Mats.meta
+    - Assets/Material/Temp Mats/Ghetto Kirby.mat
+    - Assets/Material/Temp Mats/Ghetto Kirby.mat.meta
+    - Assets/Material/Temp Mats/New Material 1.mat
+    - Assets/Material/Temp Mats/New Material 1.mat.meta
+    - Assets/Material/Temp Mats/New Material 2.mat
+    - Assets/Material/Temp Mats/New Material 2.mat.meta
+    - Assets/Material/Temp Mats/New Material.mat
+    - Assets/Material/Temp Mats/New Material.mat.meta
+    - Assets/Material/Temp Mats/Trashpile.mat
+    - Assets/Material/Temp Mats/Trashpile.mat.meta
+    - Assets/Material/ToasterBody.mat
+    - Assets/Material/ToasterBody.mat.meta
+    - Assets/Material/ToasterLegs.mat
+    - Assets/Material/ToasterLegs.mat.meta
+    - Assets/Material/ToyShovel.mat
+    - Assets/Material/ToyShovel.mat.meta
+    - Assets/Material/Tree.mat
+    - Assets/Material/Tree.mat.meta
+    - Assets/Material/TreeLeaves.mat
+    - Assets/Material/TreeLeaves.mat.meta
+    - Assets/Material/UFOToy.mat
+    - Assets/Material/UFOToy.mat.meta
+    - Assets/Material/WoodenSpoon.mat
+    - Assets/Material/WoodenSpoon.mat.meta
+    - Assets/Materials.meta
+    - Assets/Materials/Temp Mats.meta
+    - Assets/Materials/Temp Mats/Ghetto Kirby.mat
+    - Assets/Materials/Temp Mats/Ghetto Kirby.mat.meta
+    - Assets/Materials/Temp Mats/New Material 1.mat
+    - Assets/Materials/Temp Mats/New Material 1.mat.meta
+    - Assets/Materials/Temp Mats/New Material 2.mat
+    - Assets/Materials/Temp Mats/New Material 2.mat.meta
+    - Assets/Materials/Temp Mats/New Material.mat
+    - Assets/Materials/Temp Mats/New Material.mat.meta
+    - Assets/Materials/Temp Mats/Trashpile.mat
+    - Assets/Materials/Temp Mats/Trashpile.mat.meta
+    - Assets/Models.meta
+    - Assets/Models/BLAKEMODELRIGGED2.fbx
+    - Assets/Models/BLAKEMODELRIGGED2.fbx.meta
+    - Assets/Models/Bed.fbx
+    - Assets/Models/Bed.fbx.meta
+    - Assets/Models/Cabinet.fbx
+    - Assets/Models/Cabinet.fbx.meta
+    - Assets/Models/Cookie.fbx
+    - Assets/Models/Cookie.fbx.meta
+    - Assets/Models/Fork.fbx
+    - Assets/Models/Fork.fbx.meta
+    - Assets/Models/Frisbee.fbx
+    - Assets/Models/Frisbee.fbx.meta
+    - Assets/Models/GlassPlatform.fbx
+    - Assets/Models/GlassPlatform.fbx.meta
+    - Assets/Models/GlassPortal.fbx
+    - Assets/Models/GlassPortal.fbx.meta
+    - Assets/Models/GrappleSphere.fbx
+    - Assets/Models/GrappleSphere.fbx.meta
+    - Assets/Models/HandHeld.fbx
+    - Assets/Models/HandHeld.fbx.meta
+    - Assets/Models/HubPlatform.fbx
+    - Assets/Models/HubPlatform.fbx.meta
+    - Assets/Models/KitchenIsland.fbx
+    - Assets/Models/KitchenIsland.fbx.meta
+    - Assets/Models/KitchenShelf.fbx
+    - Assets/Models/KitchenShelf.fbx.meta
+    - Assets/Models/Material.meta
+    - Assets/Models/Material/Temp Mats.meta
+    - Assets/Models/MovingPlatform.fbx
+    - Assets/Models/MovingPlatform.fbx.meta
+    - Assets/Models/NightStand.fbx
+    - Assets/Models/NightStand.fbx.meta
+    - Assets/Models/Plate.fbx
+    - Assets/Models/Plate.fbx.meta
+    - Assets/Models/Platform1.fbx
+    - Assets/Models/Platform1.fbx.meta
+    - Assets/Models/Platform2.fbx
+    - Assets/Models/Platform2.fbx.meta
+    - Assets/Models/Platform3.fbx
+    - Assets/Models/Platform3.fbx.meta
+    - Assets/Models/Projectile.fbx
+    - Assets/Models/Projectile.fbx.meta
+    - Assets/Models/ProjectileLauncher.fbx
+    - Assets/Models/ProjectileLauncher.fbx.meta
+    - Assets/Models/Rock.fbx
+    - Assets/Models/Rock.fbx.meta
+    - Assets/Models/SandBoxV1.fbx
+    - Assets/Models/SandBoxV1.fbx.meta
+    - Assets/Models/SandCastle.fbx
+    - Assets/Models/SandCastle.fbx.meta
+    - Assets/Models/Sink.fbx
+    - Assets/Models/Sink.fbx.meta
+    - Assets/Models/SkySphere.fbx
+    - Assets/Models/SkySphere.fbx.meta
+    - Assets/Models/SliceofBread.fbx
+    - Assets/Models/SliceofBread.fbx.meta
+    - Assets/Models/Spoon.fbx
+    - Assets/Models/Spoon.fbx.meta
+    - Assets/Models/Toaster.fbx
+    - Assets/Models/Toaster.fbx.meta
+    - Assets/Models/ToyShovel.fbx
+    - Assets/Models/ToyShovel.fbx.meta
+    - Assets/Models/Tree.fbx
+    - Assets/Models/Tree.fbx.meta
+    - Assets/Models/UFOToy.fbx
+    - Assets/Models/UFOToy.fbx.meta
+    - Assets/Models/WoodenSpoon.fbx
+    - Assets/Models/WoodenSpoon.fbx.meta
+    - Assets/Prefab.meta
+    - Assets/Prefab/BLAKEHUB.prefab
+    - Assets/Prefab/BLAKEHUB.prefab.meta
+    - Assets/Prefab/BLAKEMODELRIGGED2.prefab
+    - Assets/Prefab/BLAKEMODELRIGGED2.prefab.meta
+    - Assets/Prefab/Bed.prefab
+    - Assets/Prefab/Bed.prefab.meta
+    - Assets/Prefab/Cabinet.prefab
+    - Assets/Prefab/Cabinet.prefab.meta
+    - Assets/Prefab/Canvas.prefab
+    - Assets/Prefab/Canvas.prefab.meta
+    - Assets/Prefab/Cookie.prefab
+    - Assets/Prefab/Cookie.prefab.meta
+    - Assets/Prefab/Fork.prefab
+    - Assets/Prefab/Fork.prefab.meta
+    - Assets/Prefab/Frisbee.prefab
+    - Assets/Prefab/Frisbee.prefab.meta
+    - Assets/Prefab/FrisbeeV2.prefab
+    - Assets/Prefab/FrisbeeV2.prefab.meta
+    - Assets/Prefab/GlassPortal.prefab
+    - Assets/Prefab/GlassPortal.prefab.meta
+    - Assets/Prefab/GrappleSphere.prefab
+    - Assets/Prefab/GrappleSphere.prefab.meta
+    - Assets/Prefab/GrappleSphereV2.prefab
+    - Assets/Prefab/GrappleSphereV2.prefab.meta
+    - Assets/Prefab/GrappleSphereV2M.prefab
+    - Assets/Prefab/GrappleSphereV2M.prefab.meta
+    - Assets/Prefab/HandHeld.prefab
+    - Assets/Prefab/HandHeld.prefab.meta
+    - Assets/Prefab/HandHeldV2.prefab
+    - Assets/Prefab/HandHeldV2.prefab.meta
+    - Assets/Prefab/HubPlatform 1.prefab
+    - Assets/Prefab/HubPlatform 1.prefab.meta
+    - Assets/Prefab/KitchenIsland.prefab
+    - Assets/Prefab/KitchenIsland.prefab.meta
+    - Assets/Prefab/Moving Point Origin.prefab
+    - Assets/Prefab/Moving Point Origin.prefab.meta
+    - Assets/Prefab/MovingPlatform.prefab
+    - Assets/Prefab/MovingPlatform.prefab.meta
+    - Assets/Prefab/NightStand.prefab
+    - Assets/Prefab/NightStand.prefab.meta
+    - Assets/Prefab/PauseScreen.prefab
+    - Assets/Prefab/PauseScreen.prefab.meta
+    - Assets/Prefab/Plate.prefab
+    - Assets/Prefab/Plate.prefab.meta
+    - Assets/Prefab/Platform1.prefab
+    - Assets/Prefab/Platform1.prefab.meta
+    - Assets/Prefab/Platform2.prefab
+    - Assets/Prefab/Platform2.prefab.meta
+    - Assets/Prefab/Platform2Hub.prefab
+    - Assets/Prefab/Platform2Hub.prefab.meta
+    - Assets/Prefab/Platform3.prefab
+    - Assets/Prefab/Platform3.prefab.meta
+    - Assets/Prefab/Player.prefab
+    - Assets/Prefab/Player.prefab.meta
+    - Assets/Prefab/Prefabs (Old).meta
+    - Assets/Prefab/Prefabs (Old)/Bulk Block.prefab
+    - Assets/Prefab/Prefabs (Old)/Bulk Block.prefab.meta
+    - Assets/Prefab/Prefabs (Old)/Jumping Block Large.prefab
+    - Assets/Prefab/Prefabs (Old)/Jumping Block Large.prefab.meta
+    - Assets/Prefab/Prefabs (Old)/Jumping Block Med.prefab
+    - Assets/Prefab/Prefabs (Old)/Jumping Block Med.prefab.meta
+    - Assets/Prefab/Prefabs (Old)/Jumping Blocks Sm.prefab
+    - Assets/Prefab/Prefabs (Old)/Jumping Blocks Sm.prefab.meta
+    - Assets/Prefab/Prefabs (Old)/KirbyIsTheMacGuffin.prefab
+    - Assets/Prefab/Prefabs (Old)/KirbyIsTheMacGuffin.prefab.meta
+    - Assets/Prefab/Prefabs (Old)/Player (Old).prefab
+    - Assets/Prefab/Prefabs (Old)/Player (Old).prefab.meta
+    - Assets/Prefab/Prefabs (Old)/Teleporter.prefab
+    - Assets/Prefab/Prefabs (Old)/Teleporter.prefab.meta
+    - Assets/Prefab/Projectile 1 1.prefab
+    - Assets/Prefab/Projectile 1 1.prefab.meta
+    - Assets/Prefab/Projectile Source.prefab
+    - Assets/Prefab/Projectile Source.prefab.meta
+    - Assets/Prefab/Projectile.prefab
+    - Assets/Prefab/Projectile.prefab.meta
+    - Assets/Prefab/ProjectileLauncher.prefab
+    - Assets/Prefab/ProjectileLauncher.prefab.meta
+    - Assets/Prefab/Rock.prefab
+    - Assets/Prefab/Rock.prefab.meta
+    - Assets/Prefab/SandBoxV1.prefab
+    - Assets/Prefab/SandBoxV1.prefab.meta
+    - Assets/Prefab/SandCastle.prefab
+    - Assets/Prefab/SandCastle.prefab.meta
+    - Assets/Prefab/Sink.prefab
+    - Assets/Prefab/Sink.prefab.meta
+    - Assets/Prefab/SliceofBread.prefab
+    - Assets/Prefab/SliceofBread.prefab.meta
+    - Assets/Prefab/Spoon.prefab
+    - Assets/Prefab/Spoon.prefab.meta
+    - Assets/Prefab/Toaster.prefab
+    - Assets/Prefab/Toaster.prefab.meta
+    - Assets/Prefab/ToyShovel.prefab
+    - Assets/Prefab/ToyShovel.prefab.meta
+    - Assets/Prefab/Tree.prefab
+    - Assets/Prefab/Tree.prefab.meta
+    - Assets/Prefab/UFOToy.prefab
+    - Assets/Prefab/UFOToy.prefab.meta
+    - Assets/Prefab/WoodenSpoon.prefab
+    - Assets/Prefab/WoodenSpoon.prefab.meta
+    - Assets/Prefabs.meta
+    - Assets/Prefabs/Bulk Block.prefab
+    - Assets/Prefabs/Bulk Block.prefab.meta
+    - Assets/Prefabs/Jumping Block Large.prefab
+    - Assets/Prefabs/Jumping Block Large.prefab.meta
+    - Assets/Prefabs/Jumping Block Med.prefab
+    - Assets/Prefabs/Jumping Block Med.prefab.meta
+    - Assets/Prefabs/Jumping Blocks Sm.prefab
+    - Assets/Prefabs/Jumping Blocks Sm.prefab.meta
+    - Assets/Prefabs/KirbyIsTheMacGuffin.prefab
+    - Assets/Prefabs/KirbyIsTheMacGuffin.prefab.meta
+    - Assets/Prefabs/Player.prefab
+    - Assets/Prefabs/Player.prefab.meta
+    - Assets/Prefabs/Teleporter.prefab
+    - Assets/Prefabs/Teleporter.prefab.meta
+    - Assets/Scenes.meta
+    - Assets/Scenes/BedRoomLevel.meta
+    - Assets/Scenes/BedRoomLevel.unity
+    - Assets/Scenes/BedRoomLevel.unity.meta
+    - Assets/Scenes/BedRoomLevel/LightingData.asset
+    - Assets/Scenes/BedRoomLevel/LightingData.asset.meta
+    - Assets/Scenes/BedRoomLevel/ReflectionProbe-0.exr
+    - Assets/Scenes/BedRoomLevel/ReflectionProbe-0.exr.meta
+    - Assets/Scenes/HubLevel.meta
+    - Assets/Scenes/HubLevel.unity
+    - Assets/Scenes/HubLevel.unity.meta
+    - Assets/Scenes/HubLevel/LightingData.asset
+    - Assets/Scenes/HubLevel/LightingData.asset.meta
+    - Assets/Scenes/HubLevel/ReflectionProbe-0.exr
+    - Assets/Scenes/HubLevel/ReflectionProbe-0.exr.meta
+    - Assets/Scenes/KitchenLevel.meta
+    - Assets/Scenes/KitchenLevel.unity
+    - Assets/Scenes/KitchenLevel.unity.meta
+    - Assets/Scenes/KitchenLevel/LightingData.asset
+    - Assets/Scenes/KitchenLevel/LightingData.asset.meta
+    - Assets/Scenes/KitchenLevel/ReflectionProbe-0.exr
+    - Assets/Scenes/KitchenLevel/ReflectionProbe-0.exr.meta
+    - Assets/Scenes/KitchenLightingSettings.lighting
+    - Assets/Scenes/KitchenLightingSettings.lighting.meta
+    - Assets/Scenes/Level1.unity
+    - Assets/Scenes/Level1.unity.meta
+    - Assets/Scenes/Level2.unity
+    - Assets/Scenes/Level2.unity.meta
+    - Assets/Scenes/Level3.unity
+    - Assets/Scenes/Level3.unity.meta
+    - Assets/Scenes/MainScene.unity
+    - Assets/Scenes/MainScene.unity.meta
+    - Assets/Scenes/MainSceneSettings.lighting
+    - Assets/Scenes/MainSceneSettings.lighting.meta
+    - Assets/Scenes/Menu Scenes.meta
+    - Assets/Scenes/Menu Scenes/HowTo.unity
+    - Assets/Scenes/Menu Scenes/HowTo.unity.meta
+    - Assets/Scenes/Menu Scenes/Lose.unity
+    - Assets/Scenes/Menu Scenes/Lose.unity.meta
+    - Assets/Scenes/Menu Scenes/Menu.unity
+    - Assets/Scenes/Menu Scenes/Menu.unity.meta
+    - Assets/Scenes/Menu Scenes/Win.unity
+    - Assets/Scenes/Menu Scenes/Win.unity.meta
+    - Assets/Scenes/OldScenes.meta
+    - Assets/Scenes/OldScenes/Level1.unity
+    - Assets/Scenes/OldScenes/Level1.unity.meta
+    - Assets/Scenes/OldScenes/Level2.unity
+    - Assets/Scenes/OldScenes/Level2.unity.meta
+    - Assets/Scenes/OldScenes/Level3.unity
+    - Assets/Scenes/OldScenes/Level3.unity.meta
+    - Assets/Scenes/OldScenes/MainScene.unity
+    - Assets/Scenes/OldScenes/MainScene.unity.meta
+    - Assets/Scenes/OldScenes/MainSceneSettings.lighting
+    - Assets/Scenes/OldScenes/MainSceneSettings.lighting.meta
+    - Assets/Scenes/OldScenes/Menu Scenes.meta
+    - Assets/Scenes/OldScenes/lossScene.unity
+    - Assets/Scenes/OldScenes/lossScene.unity.meta
+    - Assets/Scenes/OldScenes/winScene.unity
+    - Assets/Scenes/OldScenes/winScene.unity.meta
+    - Assets/Scenes/PlayGroundLevel.meta
+    - Assets/Scenes/PlayGroundLevel.unity
+    - Assets/Scenes/PlayGroundLevel.unity.meta
+    - Assets/Scenes/PlayGroundLevel/LightingData.asset
+    - Assets/Scenes/PlayGroundLevel/LightingData.asset.meta
+    - Assets/Scenes/PlayGroundLevel/ReflectionProbe-0.exr
+    - Assets/Scenes/PlayGroundLevel/ReflectionProbe-0.exr.meta
+    - Assets/Scenes/lossScene.unity
+    - Assets/Scenes/lossScene.unity.meta
+    - Assets/Scenes/winScene.unity
+    - Assets/Scenes/winScene.unity.meta
+    - Assets/Scripts.meta
+    - Assets/Scripts/Environmental Scripts.meta
+    - Assets/Scripts/Environmental Scripts/GrapplePointR.cs
+    - Assets/Scripts/Environmental Scripts/GrapplePointR.cs.meta
+    - Assets/Scripts/Environmental Scripts/GrapplePointR1.cs
+    - Assets/Scripts/Environmental Scripts/GrapplePointR1.cs.meta
+    - Assets/Scripts/Environmental Scripts/ProjectileLR.cs
+    - Assets/Scripts/Environmental Scripts/ProjectileLR.cs.meta
+    - Assets/Scripts/Environmental Scripts/SkySphere.cs
+    - Assets/Scripts/Environmental Scripts/SkySphere.cs.meta
+    - Assets/Scripts/Environmental Scripts/SpoonRotate.cs
+    - Assets/Scripts/Environmental Scripts/SpoonRotate.cs.meta
+    - Assets/Scripts/GrappleGun.cs
+    - Assets/Scripts/GrappleGun.cs.meta
+    - Assets/Scripts/Menu Scripts.meta
+    - Assets/Scripts/Menu Scripts/Lose.cs
+    - Assets/Scripts/Menu Scripts/Lose.cs.meta
+    - Assets/Scripts/Menu Scripts/MainMenu.cs
+    - Assets/Scripts/Menu Scripts/MainMenu.cs.meta
+    - Assets/Scripts/Menu Scripts/MenuController.cs
+    - Assets/Scripts/Menu Scripts/MenuController.cs.meta
+    - Assets/Scripts/Menu Scripts/PauseController.cs
+    - Assets/Scripts/Menu Scripts/PauseController.cs.meta
+    - Assets/Scripts/Menu Scripts/Play.cs
+    - Assets/Scripts/Menu Scripts/Play.cs.meta
+    - Assets/Scripts/Menu Scripts/Win.cs
+    - Assets/Scripts/Menu Scripts/Win.cs.meta
+    - Assets/Scripts/MovingBlocks.cs
+    - Assets/Scripts/MovingBlocks.cs.meta
+    - Assets/Scripts/PlayerController.cs
+    - Assets/Scripts/PlayerController.cs.meta
+    - Assets/Scripts/Projectile Scripts.meta
+    - Assets/Scripts/Projectile Scripts/ProjectileScript.cs
+    - Assets/Scripts/Projectile Scripts/ProjectileScript.cs.meta
+    - Assets/Scripts/Projectile Scripts/ProjectileSourceScript.cs
+    - Assets/Scripts/Projectile Scripts/ProjectileSourceScript.cs.meta
+    - Assets/Scripts/ProjectileSpin.cs
+    - Assets/Scripts/ProjectileSpin.cs.meta
+    - Assets/Scripts/ThrowableScript.cs
+    - Assets/Scripts/ThrowableScript.cs.meta
+    - Assets/Scripts/menuController.cs
+    - Assets/Scripts/menuController.cs.meta
+    - Assets/TextMesh Pro.meta
+    - Assets/TextMesh Pro/Documentation.meta
+    - Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf
+    - Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta
+    - Assets/TextMesh Pro/Fonts.meta
+    - Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt
+    - Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta
+    - Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+    - Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta
+    - Assets/TextMesh Pro/Resources.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.mat
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.mat.meta
+    - Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt
+    - Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta
+    - Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+    - Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta
+    - Assets/TextMesh Pro/Resources/Shaders.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Custom-Atlas.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Mobile.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Mobile.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Sprite.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Sprite.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc
+    - Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc
+    - Assets/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc
+    - Assets/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc.meta
+    - Assets/TextMesh Pro/Resources/Sprite Assets.meta
+    - Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+    - Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta
+    - Assets/TextMesh Pro/Resources/Style Sheets.meta
+    - Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+    - Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta
+    - Assets/TextMesh Pro/Resources/TMP Settings.asset
+    - Assets/TextMesh Pro/Resources/TMP Settings.asset.meta
+    - Assets/TextMesh Pro/Shaders.meta
+    - Assets/TextMesh Pro/Sprites.meta
+    - Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt
+    - Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
+    - Assets/TextMesh Pro/Sprites/EmojiOne.json
+    - Assets/TextMesh Pro/Sprites/EmojiOne.json.meta
+    - Assets/TextMesh Pro/Sprites/EmojiOne.png
+    - Assets/TextMesh Pro/Sprites/EmojiOne.png.meta
+    - Assets/Textures.meta
+    - Assets/Textures/Bed.meta
+    - Assets/Textures/Bed/Bed_lambert1_BaseMap.png
+    - Assets/Textures/Bed/Bed_lambert1_BaseMap.png.meta
+    - Assets/Textures/Bed/Bed_lambert1_MaskMap.png
+    - Assets/Textures/Bed/Bed_lambert1_MaskMap.png.meta
+    - Assets/Textures/Bed/Bed_lambert1_Normal.png
+    - Assets/Textures/Bed/Bed_lambert1_Normal.png.meta
+    - Assets/Textures/BlakeModel.meta
+    - Assets/Textures/BlakeModel/BLAKEMODEL2_phong1_AlbedoTransparency.png
+    - Assets/Textures/BlakeModel/BLAKEMODEL2_phong1_AlbedoTransparency.png.meta
+    - Assets/Textures/BlakeModel/BLAKEMODEL2_phong1_MetallicSmoothness.png
+    - Assets/Textures/BlakeModel/BLAKEMODEL2_phong1_MetallicSmoothness.png.meta
+    - Assets/Textures/BlakeModel/BLAKEMODEL2_phong1_Normal.png
+    - Assets/Textures/BlakeModel/BLAKEMODEL2_phong1_Normal.png.meta
+    - Assets/Textures/Cabinet.meta
+    - Assets/Textures/Cabinet/Cabinet_CabinetBody_AlbedoTransparency.png
+    - Assets/Textures/Cabinet/Cabinet_CabinetBody_AlbedoTransparency.png.meta
+    - Assets/Textures/Cabinet/Cabinet_CabinetBody_Emission.png
+    - Assets/Textures/Cabinet/Cabinet_CabinetBody_Emission.png.meta
+    - Assets/Textures/Cabinet/Cabinet_CabinetBody_MetallicSmoothness.png
+    - Assets/Textures/Cabinet/Cabinet_CabinetBody_MetallicSmoothness.png.meta
+    - Assets/Textures/Cabinet/Cabinet_CabinetBody_Normal.png
+    - Assets/Textures/Cabinet/Cabinet_CabinetBody_Normal.png.meta
+    - Assets/Textures/Cabinet/Cabinet_CabinetDoor_AlbedoTransparency.png
+    - Assets/Textures/Cabinet/Cabinet_CabinetDoor_AlbedoTransparency.png.meta
+    - Assets/Textures/Cabinet/Cabinet_CabinetDoor_Emission.png
+    - Assets/Textures/Cabinet/Cabinet_CabinetDoor_Emission.png.meta
+    - Assets/Textures/Cabinet/Cabinet_CabinetDoor_MetallicSmoothness.png
+    - Assets/Textures/Cabinet/Cabinet_CabinetDoor_MetallicSmoothness.png.meta
+    - Assets/Textures/Cabinet/Cabinet_CabinetDoor_Normal.png
+    - Assets/Textures/Cabinet/Cabinet_CabinetDoor_Normal.png.meta
+    - Assets/Textures/Cabinet/Cabinet_CounterTop_AlbedoTransparency.png
+    - Assets/Textures/Cabinet/Cabinet_CounterTop_AlbedoTransparency.png.meta
+    - Assets/Textures/Cabinet/Cabinet_CounterTop_Emission.png
+    - Assets/Textures/Cabinet/Cabinet_CounterTop_Emission.png.meta
+    - Assets/Textures/Cabinet/Cabinet_CounterTop_MetallicSmoothness.png
+    - Assets/Textures/Cabinet/Cabinet_CounterTop_MetallicSmoothness.png.meta
+    - Assets/Textures/Cabinet/Cabinet_CounterTop_Normal.png
+    - Assets/Textures/Cabinet/Cabinet_CounterTop_Normal.png.meta
+    - Assets/Textures/Cookie.meta
+    - Assets/Textures/Cookie/Cookie_ChocolateChip_AlbedoTransparency.png
+    - Assets/Textures/Cookie/Cookie_ChocolateChip_AlbedoTransparency.png.meta
+    - Assets/Textures/Cookie/Cookie_ChocolateChip_Emission.png
+    - Assets/Textures/Cookie/Cookie_ChocolateChip_Emission.png.meta
+    - Assets/Textures/Cookie/Cookie_ChocolateChip_MetallicSmoothness.png
+    - Assets/Textures/Cookie/Cookie_ChocolateChip_MetallicSmoothness.png.meta
+    - Assets/Textures/Cookie/Cookie_ChocolateChip_Normal.png
+    - Assets/Textures/Cookie/Cookie_ChocolateChip_Normal.png.meta
+    - Assets/Textures/Cookie/Cookie_CookieBody_AlbedoTransparency.png
+    - Assets/Textures/Cookie/Cookie_CookieBody_AlbedoTransparency.png.meta
+    - Assets/Textures/Cookie/Cookie_CookieBody_Emission.png
+    - Assets/Textures/Cookie/Cookie_CookieBody_Emission.png.meta
+    - Assets/Textures/Cookie/Cookie_CookieBody_MetallicSmoothness.png
+    - Assets/Textures/Cookie/Cookie_CookieBody_MetallicSmoothness.png.meta
+    - Assets/Textures/Cookie/Cookie_CookieBody_Normal.png
+    - Assets/Textures/Cookie/Cookie_CookieBody_Normal.png.meta
+    - Assets/Textures/Fork.meta
+    - Assets/Textures/Fork/Fork_lambert1_AlbedoTransparency.png
+    - Assets/Textures/Fork/Fork_lambert1_AlbedoTransparency.png.meta
+    - Assets/Textures/Fork/Fork_lambert1_Emission.png
+    - Assets/Textures/Fork/Fork_lambert1_Emission.png.meta
+    - Assets/Textures/Fork/Fork_lambert1_MetallicSmoothness.png
+    - Assets/Textures/Fork/Fork_lambert1_MetallicSmoothness.png.meta
+    - Assets/Textures/Fork/Fork_lambert1_Normal.png
+    - Assets/Textures/Fork/Fork_lambert1_Normal.png.meta
+    - Assets/Textures/Frisbee.meta
+    - Assets/Textures/Frisbee/Frisbee_lambert1_BaseMap.png
+    - Assets/Textures/Frisbee/Frisbee_lambert1_BaseMap.png.meta
+    - Assets/Textures/Frisbee/Frisbee_lambert1_MaskMap.png
+    - Assets/Textures/Frisbee/Frisbee_lambert1_MaskMap.png.meta
+    - Assets/Textures/Frisbee/Frisbee_lambert1_Normal.png
+    - Assets/Textures/Frisbee/Frisbee_lambert1_Normal.png.meta
+    - Assets/Textures/GlassPlatform.meta
+    - Assets/Textures/GlassPlatform/GlassPlatform_lambert1_AlbedoTransparency.png
+    - Assets/Textures/GlassPlatform/GlassPlatform_lambert1_AlbedoTransparency.png.meta
+    - Assets/Textures/GlassPlatform/GlassPlatform_lambert1_Emission.png
+    - Assets/Textures/GlassPlatform/GlassPlatform_lambert1_Emission.png.meta
+    - Assets/Textures/GlassPlatform/GlassPlatform_lambert1_MetallicSmoothness.png
+    - Assets/Textures/GlassPlatform/GlassPlatform_lambert1_MetallicSmoothness.png.meta
+    - Assets/Textures/GlassPlatform/GlassPlatform_lambert1_Normal.png
+    - Assets/Textures/GlassPlatform/GlassPlatform_lambert1_Normal.png.meta
+    - Assets/Textures/GlassPortal.meta
+    - Assets/Textures/GlassPortal/GlassPortal_PortalArch_AlbedoTransparency.png
+    - Assets/Textures/GlassPortal/GlassPortal_PortalArch_AlbedoTransparency.png.meta
+    - Assets/Textures/GlassPortal/GlassPortal_PortalArch_Emission.png
+    - Assets/Textures/GlassPortal/GlassPortal_PortalArch_Emission.png.meta
+    - Assets/Textures/GlassPortal/GlassPortal_PortalArch_MetallicSmoothness.png
+    - Assets/Textures/GlassPortal/GlassPortal_PortalArch_MetallicSmoothness.png.meta
+    - Assets/Textures/GlassPortal/GlassPortal_PortalArch_Normal.png
+    - Assets/Textures/GlassPortal/GlassPortal_PortalArch_Normal.png.meta
+    - Assets/Textures/GlassPortal/GlassPortal_PortalFace_AlbedoTransparency.png
+    - Assets/Textures/GlassPortal/GlassPortal_PortalFace_AlbedoTransparency.png.meta
+    - Assets/Textures/GlassPortal/GlassPortal_PortalFace_Emission.png
+    - Assets/Textures/GlassPortal/GlassPortal_PortalFace_Emission.png.meta
+    - Assets/Textures/GlassPortal/GlassPortal_PortalFace_MetallicSmoothness.png
+    - Assets/Textures/GlassPortal/GlassPortal_PortalFace_MetallicSmoothness.png.meta
+    - Assets/Textures/GlassPortal/GlassPortal_PortalFace_Normal.png
+    - Assets/Textures/GlassPortal/GlassPortal_PortalFace_Normal.png.meta
+    - Assets/Textures/GrapplePoint.meta
+    - Assets/Textures/GrapplePoint/GrappleSphere_Grappl;ePoint_AlbedoTransparency.png
+    - Assets/Textures/GrapplePoint/GrappleSphere_Grappl;ePoint_AlbedoTransparency.png.meta
+    - Assets/Textures/GrapplePoint/GrappleSphere_Grappl;ePoint_Emission.png
+    - Assets/Textures/GrapplePoint/GrappleSphere_Grappl;ePoint_Emission.png.meta
+    - Assets/Textures/GrapplePoint/GrappleSphere_Grappl;ePoint_MetallicSmoothness.png
+    - Assets/Textures/GrapplePoint/GrappleSphere_Grappl;ePoint_MetallicSmoothness.png.meta
+    - Assets/Textures/GrapplePoint/GrappleSphere_Grappl;ePoint_Normal.png
+    - Assets/Textures/GrapplePoint/GrappleSphere_Grappl;ePoint_Normal.png.meta
+    - Assets/Textures/HandHeld.meta
+    - Assets/Textures/HandHeld/HandHeld_HandHeldButton_AlbedoTransparency.png
+    - Assets/Textures/HandHeld/HandHeld_HandHeldButton_AlbedoTransparency.png.meta
+    - Assets/Textures/HandHeld/HandHeld_HandHeldButton_Emission.png
+    - Assets/Textures/HandHeld/HandHeld_HandHeldButton_Emission.png.meta
+    - Assets/Textures/HandHeld/HandHeld_HandHeldButton_MetallicSmoothness.png
+    - Assets/Textures/HandHeld/HandHeld_HandHeldButton_MetallicSmoothness.png.meta
+    - Assets/Textures/HandHeld/HandHeld_HandHeldButton_Normal.png
+    - Assets/Textures/HandHeld/HandHeld_HandHeldButton_Normal.png.meta
+    - Assets/Textures/HandHeld/HandHeld_HandHeld_AlbedoTransparency.png
+    - Assets/Textures/HandHeld/HandHeld_HandHeld_AlbedoTransparency.png.meta
+    - Assets/Textures/HandHeld/HandHeld_HandHeld_Emission.png
+    - Assets/Textures/HandHeld/HandHeld_HandHeld_Emission.png.meta
+    - Assets/Textures/HandHeld/HandHeld_HandHeld_MetallicSmoothness.png
+    - Assets/Textures/HandHeld/HandHeld_HandHeld_MetallicSmoothness.png.meta
+    - Assets/Textures/HandHeld/HandHeld_HandHeld_Normal.png
+    - Assets/Textures/HandHeld/HandHeld_HandHeld_Normal.png.meta
+    - Assets/Textures/KitchenIsland.meta
+    - Assets/Textures/KitchenIsland/KitchenIsland_KitchenIsland_AlbedoTransparency.png
+    - Assets/Textures/KitchenIsland/KitchenIsland_KitchenIsland_AlbedoTransparency.png.meta
+    - Assets/Textures/KitchenIsland/KitchenIsland_KitchenIsland_Emission.png
+    - Assets/Textures/KitchenIsland/KitchenIsland_KitchenIsland_Emission.png.meta
+    - Assets/Textures/KitchenIsland/KitchenIsland_KitchenIsland_MetallicSmoothness.png
+    - Assets/Textures/KitchenIsland/KitchenIsland_KitchenIsland_MetallicSmoothness.png.meta
+    - Assets/Textures/KitchenIsland/KitchenIsland_KitchenIsland_Normal.png
+    - Assets/Textures/KitchenIsland/KitchenIsland_KitchenIsland_Normal.png.meta
+    - Assets/Textures/KitchenShelf.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_AlbedoTransparency.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_AlbedoTransparency.png.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_Emission.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_Emission.png.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_MetallicSmoothness.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_MetallicSmoothness.png.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_Normal.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_ShelfClutter_Normal.png.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_AlbedoTransparency.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_AlbedoTransparency.png.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_Emission.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_Emission.png.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_MetallicSmoothness.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_MetallicSmoothness.png.meta
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_Normal.png
+    - Assets/Textures/KitchenShelf/KitchenShelf_Shelf_Normal.png.meta
+    - Assets/Textures/NightStand.meta
+    - Assets/Textures/NightStand/NightStand_lambert1_AlbedoTransparency.png
+    - Assets/Textures/NightStand/NightStand_lambert1_AlbedoTransparency.png.meta
+    - Assets/Textures/NightStand/NightStand_lambert1_Emission.png
+    - Assets/Textures/NightStand/NightStand_lambert1_Emission.png.meta
+    - Assets/Textures/NightStand/NightStand_lambert1_MetallicSmoothness.png
+    - Assets/Textures/NightStand/NightStand_lambert1_MetallicSmoothness.png.meta
+    - Assets/Textures/NightStand/NightStand_lambert1_Normal.png
+    - Assets/Textures/NightStand/NightStand_lambert1_Normal.png.meta
+    - Assets/Textures/Plate.meta
+    - Assets/Textures/Plate/Plate_Plate_AlbedoTransparency.png
+    - Assets/Textures/Plate/Plate_Plate_AlbedoTransparency.png.meta
+    - Assets/Textures/Plate/Plate_Plate_Emission.png
+    - Assets/Textures/Plate/Plate_Plate_Emission.png.meta
+    - Assets/Textures/Plate/Plate_Plate_MetallicSmoothness.png
+    - Assets/Textures/Plate/Plate_Plate_MetallicSmoothness.png.meta
+    - Assets/Textures/Plate/Plate_Plate_Normal.png
+    - Assets/Textures/Plate/Plate_Plate_Normal.png.meta
+    - Assets/Textures/Platform1.meta
+    - Assets/Textures/Platform1/Platform1_PlatformGlass_AlbedoTransparency.png
+    - Assets/Textures/Platform1/Platform1_PlatformGlass_AlbedoTransparency.png.meta
+    - Assets/Textures/Platform1/Platform1_PlatformGlass_Emission.png
+    - Assets/Textures/Platform1/Platform1_PlatformGlass_Emission.png.meta
+    - Assets/Textures/Platform1/Platform1_PlatformGlass_MetallicSmoothness.png
+    - Assets/Textures/Platform1/Platform1_PlatformGlass_MetallicSmoothness.png.meta
+    - Assets/Textures/Platform1/Platform1_PlatformGlass_Normal.png
+    - Assets/Textures/Platform1/Platform1_PlatformGlass_Normal.png.meta
+    - Assets/Textures/Platform2.meta
+    - Assets/Textures/Platform2/Platform2_PlatformGlass_AlbedoTransparency.png
+    - Assets/Textures/Platform2/Platform2_PlatformGlass_AlbedoTransparency.png.meta
+    - Assets/Textures/Platform2/Platform2_PlatformGlass_Emission.png
+    - Assets/Textures/Platform2/Platform2_PlatformGlass_Emission.png.meta
+    - Assets/Textures/Platform2/Platform2_PlatformGlass_MetallicSmoothness.png
+    - Assets/Textures/Platform2/Platform2_PlatformGlass_MetallicSmoothness.png.meta
+    - Assets/Textures/Platform2/Platform2_PlatformGlass_Normal.png
+    - Assets/Textures/Platform2/Platform2_PlatformGlass_Normal.png.meta
+    - Assets/Textures/Platform3.meta
+    - Assets/Textures/Platform3/Platform3_GlassPlatform_AlbedoTransparency.png
+    - Assets/Textures/Platform3/Platform3_GlassPlatform_AlbedoTransparency.png.meta
+    - Assets/Textures/Platform3/Platform3_GlassPlatform_Emission.png
+    - Assets/Textures/Platform3/Platform3_GlassPlatform_Emission.png.meta
+    - Assets/Textures/Platform3/Platform3_GlassPlatform_MetallicSmoothness.png
+    - Assets/Textures/Platform3/Platform3_GlassPlatform_MetallicSmoothness.png.meta
+    - Assets/Textures/Platform3/Platform3_GlassPlatform_Normal.png
+    - Assets/Textures/Platform3/Platform3_GlassPlatform_Normal.png.meta
+    - Assets/Textures/Rock.meta
+    - Assets/Textures/Rock/Rock_lambert1_AlbedoTransparency.png
+    - Assets/Textures/Rock/Rock_lambert1_AlbedoTransparency.png.meta
+    - Assets/Textures/Rock/Rock_lambert1_Emission.png
+    - Assets/Textures/Rock/Rock_lambert1_Emission.png.meta
+    - Assets/Textures/Rock/Rock_lambert1_MetallicSmoothness.png
+    - Assets/Textures/Rock/Rock_lambert1_MetallicSmoothness.png.meta
+    - Assets/Textures/Rock/Rock_lambert1_Normal.png
+    - Assets/Textures/Rock/Rock_lambert1_Normal.png.meta
+    - Assets/Textures/SandBoxV1.meta
+    - Assets/Textures/SandBoxV1/SandBoxV1_lambert1_AlbedoTransparency.png
+    - Assets/Textures/SandBoxV1/SandBoxV1_lambert1_AlbedoTransparency.png.meta
+    - Assets/Textures/SandBoxV1/SandBoxV1_lambert1_Emission.png
+    - Assets/Textures/SandBoxV1/SandBoxV1_lambert1_Emission.png.meta
+    - Assets/Textures/SandBoxV1/SandBoxV1_lambert1_MetallicSmoothness.png
+    - Assets/Textures/SandBoxV1/SandBoxV1_lambert1_MetallicSmoothness.png.meta
+    - Assets/Textures/SandBoxV1/SandBoxV1_lambert1_Normal.png
+    - Assets/Textures/SandBoxV1/SandBoxV1_lambert1_Normal.png.meta
+    - Assets/Textures/SandCastle.meta
+    - Assets/Textures/SandCastle/SandCastle_Flag_AlbedoTransparency.png
+    - Assets/Textures/SandCastle/SandCastle_Flag_AlbedoTransparency.png.meta
+    - Assets/Textures/SandCastle/SandCastle_Flag_Emission.png
+    - Assets/Textures/SandCastle/SandCastle_Flag_Emission.png.meta
+    - Assets/Textures/SandCastle/SandCastle_Flag_MetallicSmoothness.png
+    - Assets/Textures/SandCastle/SandCastle_Flag_MetallicSmoothness.png.meta
+    - Assets/Textures/SandCastle/SandCastle_Flag_Normal.png
+    - Assets/Textures/SandCastle/SandCastle_Flag_Normal.png.meta
+    - Assets/Textures/SandCastle/SandCastle_Pencil_AlbedoTransparency.png
+    - Assets/Textures/SandCastle/SandCastle_Pencil_AlbedoTransparency.png.meta
+    - Assets/Textures/SandCastle/SandCastle_Pencil_Emission.png
+    - Assets/Textures/SandCastle/SandCastle_Pencil_Emission.png.meta
+    - Assets/Textures/SandCastle/SandCastle_Pencil_MetallicSmoothness.png
+    - Assets/Textures/SandCastle/SandCastle_Pencil_MetallicSmoothness.png.meta
+    - Assets/Textures/SandCastle/SandCastle_Pencil_Normal.png
+    - Assets/Textures/SandCastle/SandCastle_Pencil_Normal.png.meta
+    - Assets/Textures/SandCastle/SandCastle_Tower_AlbedoTransparency.png
+    - Assets/Textures/SandCastle/SandCastle_Tower_AlbedoTransparency.png.meta
+    - Assets/Textures/SandCastle/SandCastle_Tower_Emission.png
+    - Assets/Textures/SandCastle/SandCastle_Tower_Emission.png.meta
+    - Assets/Textures/SandCastle/SandCastle_Tower_MetallicSmoothness.png
+    - Assets/Textures/SandCastle/SandCastle_Tower_MetallicSmoothness.png.meta
+    - Assets/Textures/SandCastle/SandCastle_Tower_Normal.png
+    - Assets/Textures/SandCastle/SandCastle_Tower_Normal.png.meta
+    - Assets/Textures/Sink.meta
+    - Assets/Textures/Sink/Sink_CabinetBody_AlbedoTransparency.png
+    - Assets/Textures/Sink/Sink_CabinetBody_AlbedoTransparency.png.meta
+    - Assets/Textures/Sink/Sink_CabinetBody_Emission.png
+    - Assets/Textures/Sink/Sink_CabinetBody_Emission.png.meta
+    - Assets/Textures/Sink/Sink_CabinetBody_MetallicSmoothness.png
+    - Assets/Textures/Sink/Sink_CabinetBody_MetallicSmoothness.png.meta
+    - Assets/Textures/Sink/Sink_CabinetBody_Normal.png
+    - Assets/Textures/Sink/Sink_CabinetBody_Normal.png.meta
+    - Assets/Textures/Sink/Sink_CabinetDoor_AlbedoTransparency.png
+    - Assets/Textures/Sink/Sink_CabinetDoor_AlbedoTransparency.png.meta
+    - Assets/Textures/Sink/Sink_CabinetDoor_Emission.png
+    - Assets/Textures/Sink/Sink_CabinetDoor_Emission.png.meta
+    - Assets/Textures/Sink/Sink_CabinetDoor_MetallicSmoothness.png
+    - Assets/Textures/Sink/Sink_CabinetDoor_MetallicSmoothness.png.meta
+    - Assets/Textures/Sink/Sink_CabinetDoor_Normal.png
+    - Assets/Textures/Sink/Sink_CabinetDoor_Normal.png.meta
+    - Assets/Textures/Sink/Sink_CounterTop_AlbedoTransparency.png
+    - Assets/Textures/Sink/Sink_CounterTop_AlbedoTransparency.png.meta
+    - Assets/Textures/Sink/Sink_CounterTop_Emission.png
+    - Assets/Textures/Sink/Sink_CounterTop_Emission.png.meta
+    - Assets/Textures/Sink/Sink_CounterTop_MetallicSmoothness.png
+    - Assets/Textures/Sink/Sink_CounterTop_MetallicSmoothness.png.meta
+    - Assets/Textures/Sink/Sink_CounterTop_Normal.png
+    - Assets/Textures/Sink/Sink_CounterTop_Normal.png.meta
+    - Assets/Textures/Sink/Sink_Sink_AlbedoTransparency.png
+    - Assets/Textures/Sink/Sink_Sink_AlbedoTransparency.png.meta
+    - Assets/Textures/Sink/Sink_Sink_Emission.png
+    - Assets/Textures/Sink/Sink_Sink_Emission.png.meta
+    - Assets/Textures/Sink/Sink_Sink_MetallicSmoothness.png
+    - Assets/Textures/Sink/Sink_Sink_MetallicSmoothness.png.meta
+    - Assets/Textures/Sink/Sink_Sink_Normal.png
+    - Assets/Textures/Sink/Sink_Sink_Normal.png.meta
+    - Assets/Textures/SkySphere.meta
+    - Assets/Textures/SkySphere/SkySphere_lambert1_AlbedoTransparency.png
+    - Assets/Textures/SkySphere/SkySphere_lambert1_AlbedoTransparency.png.meta
+    - Assets/Textures/SkySphere/SkySphere_lambert1_Emission.png
+    - Assets/Textures/SkySphere/SkySphere_lambert1_Emission.png.meta
+    - Assets/Textures/SkySphere/SkySphere_lambert1_MetallicSmoothness.png
+    - Assets/Textures/SkySphere/SkySphere_lambert1_MetallicSmoothness.png.meta
+    - Assets/Textures/SkySphere/SkySphere_lambert1_Normal.png
+    - Assets/Textures/SkySphere/SkySphere_lambert1_Normal.png.meta
+    - Assets/Textures/SliceofBread.meta
+    - Assets/Textures/SliceofBread/SliceofBread_lambert1_AlbedoTransparency.png
+    - Assets/Textures/SliceofBread/SliceofBread_lambert1_AlbedoTransparency.png.meta
+    - Assets/Textures/SliceofBread/SliceofBread_lambert1_Emission.png
+    - Assets/Textures/SliceofBread/SliceofBread_lambert1_Emission.png.meta
+    - Assets/Textures/SliceofBread/SliceofBread_lambert1_MetallicSmoothness.png
+    - Assets/Textures/SliceofBread/SliceofBread_lambert1_MetallicSmoothness.png.meta
+    - Assets/Textures/SliceofBread/SliceofBread_lambert1_Normal.png
+    - Assets/Textures/SliceofBread/SliceofBread_lambert1_Normal.png.meta
+    - Assets/Textures/Spoon.meta
+    - Assets/Textures/Spoon/Spoon_lambert1_AlbedoTransparency.png
+    - Assets/Textures/Spoon/Spoon_lambert1_AlbedoTransparency.png.meta
+    - Assets/Textures/Spoon/Spoon_lambert1_Emission.png
+    - Assets/Textures/Spoon/Spoon_lambert1_Emission.png.meta
+    - Assets/Textures/Spoon/Spoon_lambert1_MetallicSmoothness.png
+    - Assets/Textures/Spoon/Spoon_lambert1_MetallicSmoothness.png.meta
+    - Assets/Textures/Spoon/Spoon_lambert1_Normal.png
+    - Assets/Textures/Spoon/Spoon_lambert1_Normal.png.meta
+    - Assets/Textures/Toaster.meta
+    - Assets/Textures/Toaster/Toaster_Toaster_Body_AlbedoTransparency.png
+    - Assets/Textures/Toaster/Toaster_Toaster_Body_AlbedoTransparency.png.meta
+    - Assets/Textures/Toaster/Toaster_Toaster_Body_Emission.png
+    - Assets/Textures/Toaster/Toaster_Toaster_Body_Emission.png.meta
+    - Assets/Textures/Toaster/Toaster_Toaster_Body_MetallicSmoothness.png
+    - Assets/Textures/Toaster/Toaster_Toaster_Body_MetallicSmoothness.png.meta
+    - Assets/Textures/Toaster/Toaster_Toaster_Body_Normal.png
+    - Assets/Textures/Toaster/Toaster_Toaster_Body_Normal.png.meta
+    - Assets/Textures/Toaster/Toaster_Toaster_Legs_AlbedoTransparency.png
+    - Assets/Textures/Toaster/Toaster_Toaster_Legs_AlbedoTransparency.png.meta
+    - Assets/Textures/Toaster/Toaster_Toaster_Legs_Emission.png
+    - Assets/Textures/Toaster/Toaster_Toaster_Legs_Emission.png.meta
+    - Assets/Textures/Toaster/Toaster_Toaster_Legs_MetallicSmoothness.png
+    - Assets/Textures/Toaster/Toaster_Toaster_Legs_MetallicSmoothness.png.meta
+    - Assets/Textures/Toaster/Toaster_Toaster_Legs_Normal.png
+    - Assets/Textures/Toaster/Toaster_Toaster_Legs_Normal.png.meta
+    - Assets/Textures/ToyShovel.meta
+    - Assets/Textures/ToyShovel/ToyShovel_lambert1_BaseMap.png
+    - Assets/Textures/ToyShovel/ToyShovel_lambert1_BaseMap.png.meta
+    - Assets/Textures/ToyShovel/ToyShovel_lambert1_MaskMap.png
+    - Assets/Textures/ToyShovel/ToyShovel_lambert1_MaskMap.png.meta
+    - Assets/Textures/ToyShovel/ToyShovel_lambert1_Normal.png
+    - Assets/Textures/ToyShovel/ToyShovel_lambert1_Normal.png.meta
+    - Assets/Textures/Tree.meta
+    - Assets/Textures/Tree/Tree_Leaves_AlbedoTransparency.png
+    - Assets/Textures/Tree/Tree_Leaves_AlbedoTransparency.png.meta
+    - Assets/Textures/Tree/Tree_Leaves_Emission.png
+    - Assets/Textures/Tree/Tree_Leaves_Emission.png.meta
+    - Assets/Textures/Tree/Tree_Leaves_MetallicSmoothness.png
+    - Assets/Textures/Tree/Tree_Leaves_MetallicSmoothness.png.meta
+    - Assets/Textures/Tree/Tree_Leaves_Normal.png
+    - Assets/Textures/Tree/Tree_Leaves_Normal.png.meta
+    - Assets/Textures/Tree/Tree_Wood_AlbedoTransparency.png
+    - Assets/Textures/Tree/Tree_Wood_AlbedoTransparency.png.meta
+    - Assets/Textures/Tree/Tree_Wood_Emission.png
+    - Assets/Textures/Tree/Tree_Wood_Emission.png.meta
+    - Assets/Textures/Tree/Tree_Wood_MetallicSmoothness.png
+    - Assets/Textures/Tree/Tree_Wood_MetallicSmoothness.png.meta
+    - Assets/Textures/Tree/Tree_Wood_Normal.png
+    - Assets/Textures/Tree/Tree_Wood_Normal.png.meta
+    - Assets/Textures/UFOToy.meta
+    - Assets/Textures/UFOToy/UFOToy_lambert1_AlbedoTransparency.png
+    - Assets/Textures/UFOToy/UFOToy_lambert1_AlbedoTransparency.png.meta
+    - Assets/Textures/UFOToy/UFOToy_lambert1_Emission.png
+    - Assets/Textures/UFOToy/UFOToy_lambert1_Emission.png.meta
+    - Assets/Textures/UFOToy/UFOToy_lambert1_MetallicSmoothness.png
+    - Assets/Textures/UFOToy/UFOToy_lambert1_MetallicSmoothness.png.meta
+    - Assets/Textures/UFOToy/UFOToy_lambert1_Normal.png
+    - Assets/Textures/UFOToy/UFOToy_lambert1_Normal.png.meta
+    - Assets/Textures/WoodenSpoon.meta
+    - Assets/Textures/WoodenSpoon/WoodenSpoon_WoodSpoon_AlbedoTransparency.png
+    - Assets/Textures/WoodenSpoon/WoodenSpoon_WoodSpoon_AlbedoTransparency.png.meta
+    - Assets/Textures/WoodenSpoon/WoodenSpoon_WoodSpoon_Emission.png
+    - Assets/Textures/WoodenSpoon/WoodenSpoon_WoodSpoon_Emission.png.meta
+    - Assets/Textures/WoodenSpoon/WoodenSpoon_WoodSpoon_MetallicSmoothness.png
+    - Assets/Textures/WoodenSpoon/WoodenSpoon_WoodSpoon_MetallicSmoothness.png.meta
+    - Assets/Textures/WoodenSpoon/WoodenSpoon_WoodSpoon_Normal.png
+    - Assets/Textures/WoodenSpoon/WoodenSpoon_WoodSpoon_Normal.png.meta
+    - Packages/manifest.json
+    - Packages/packages-lock.json
+    - ProjectSettings/AudioManager.asset
+    - ProjectSettings/ClusterInputManager.asset
+    - ProjectSettings/DynamicsManager.asset
+    - ProjectSettings/EditorBuildSettings.asset
+    - ProjectSettings/EditorSettings.asset
+    - ProjectSettings/GraphicsSettings.asset
+    - ProjectSettings/InputManager.asset
+    - ProjectSettings/NavMeshAreas.asset
+    - ProjectSettings/Physics2DSettings.asset
+    - ProjectSettings/PresetManager.asset
+    - ProjectSettings/ProjectSettings.asset
+    - ProjectSettings/ProjectVersion.txt
+    - ProjectSettings/QualitySettings.asset
+    - ProjectSettings/TagManager.asset
+    - ProjectSettings/TimeManager.asset
+    - ProjectSettings/UnityConnectSettings.asset
+    - ProjectSettings/VFXManager.asset
+    - ProjectSettings/VersionControlSettings.asset
+    - 
+    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

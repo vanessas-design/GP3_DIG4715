@@ -1697,8 +1697,8 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu Scenes/HowTo.unity
   - Assets/Scenes/HubLevel.unity
   - Assets/Scenes/KitchenLevel.unity
-  - Assets/Scenes/PlayGroundLevel.unity
   - Assets/Scenes/BedRoomLevel.unity
+  - Assets/Scenes/PlayGroundLevel.unity
   - Assets/Scenes/Menu Scenes/Lose.unity
   - Assets/Scenes/Menu Scenes/Win.unity
   playerPath: C:/Users/Jake/Desktop/Alpha Test Build/GP3.exe
