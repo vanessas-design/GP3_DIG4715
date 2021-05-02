@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
 {
     //Audio code
     public AudioSource musicSource;
-
     public AudioClip musicClipLose;
     public AudioClip musicClipJump;
     public AudioClip musicClipMac;
@@ -76,6 +75,23 @@ public class PlayerController : MonoBehaviour
 
     private static bool firstHubVisit = true;
 
+    [SerializeField]
+    private GameObject levelOneCinematic;
+    [SerializeField]
+    private GameObject levelTwoCinematic;
+    [SerializeField]
+    private GameObject levelThreeCinematic;
+    [SerializeField]
+    private GameObject hubCinematic;
+
+    //level cinematics
+    private static bool cinematicOneNotDone = true;
+    private static bool cinematicTwoNotDone = true;
+    private static bool cinematicThreeNotDone = true;
+    private static bool cinematicHubNotDone = true;
+
+    private GameObject dialogueObject;
+    private AudioSource dialogueSource;
 
     // Start is called before the first frame update
     void Start()
@@ -86,30 +102,19 @@ public class PlayerController : MonoBehaviour
         ammoText.text = "Ammo: " + ammoCount.ToString();
         cameraForward = Camera.main.transform.forward;
 
-        /*
-        //spawning in the MacGuffin
-        if (activeScene.name == "Level1")
+        //Cinematics
+        if (activeScene.name == "KitchenLevel")
         {
-            if (stage1 == false)
-            {
-                Instantiate(MacGuffin, new Vector3 (-5, 0, 14), Quaternion.identity);
-            }
+            Cinematic(1, cinematicOneNotDone);
         }
-        else if (activeScene.name == "Level2")
+        else if (activeScene.name == "BedRoomLevel")
         {
-            if (stage2 == false)
-            {
-                Instantiate(MacGuffin, new Vector3 (3, 0, 5), Quaternion.identity);
-            }   
+            Cinematic(2, cinematicOneNotDone);
         }
-        else if (activeScene.name == "Level3")
+        else if (activeScene.name == "PlayGroundLevel")
         {
-            if (stage3 == false)
-            {
-                Instantiate(MacGuffin, new Vector3 (-4, 0.5f, 7), Quaternion.identity);
-            }
+            Cinematic(3, cinematicOneNotDone);
         }
-        */
 
         Cursor.lockState = CursorLockMode.Locked;
 
@@ -130,6 +135,7 @@ public class PlayerController : MonoBehaviour
             if (firstHubVisit)
             {
                 transform.position = new Vector3(0, 13, 0);
+                Cinematic(4, cinematicHubNotDone);
             }
         }
     }
@@ -191,48 +197,53 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-
-        //jumping
-        if (Input.GetAxisRaw("Jump") != 0)
+        if(paused == false)
         {
-            if (!jumpKeyPressed)
+            //jumping
+            if (Input.GetAxisRaw("Jump") != 0)
             {
-                jumpKeyPressed = true;
-                jump();
-                musicSource.clip = musicClipJump;
-                musicSource.Play();
-            }
-        } else if (jumpKeyPressed)
-        {
-            jumpKeyPressed = false;
-        }
-
-        //placing a block
-        if (Input.GetAxisRaw("Fire1") != 0)                                     // this axis will be != 0 if the 'e' key is pressed
-        {
-            if (!fireKeyPressed)
+                if (!jumpKeyPressed)
+                {
+                    jumpKeyPressed = true;
+                    jump();
+                    musicSource.clip = musicClipJump;
+                    musicSource.Play();
+                }
+            } 
+            else if (jumpKeyPressed)
             {
-                fireKeyPressed = true;
-                deployToy();
-                musicSource.clip = musicClipBlock;
-                musicSource.Play();
+                jumpKeyPressed = false;
             }
-        } else if (fireKeyPressed)
-        {
-            fireKeyPressed = false;
-        }
 
-        //removing a placed block
-        if (Input.GetAxisRaw("Fire2") != 0)                                     // this axis will be != 0 if the 'e' key is pressed
-        {
-            if (!removeKeyPressed)
+            //placing a block
+            if (Input.GetAxisRaw("Fire1") != 0)                                     // this axis will be != 0 if the 'e' key is pressed
             {
-                removeKeyPressed = true;
-                removeToy();
+                if (!fireKeyPressed)
+                {
+                    fireKeyPressed = true;
+                    deployToy();
+                    musicSource.clip = musicClipBlock;
+                    musicSource.Play();
+                }
+            } 
+            else if (fireKeyPressed)
+            {
+                fireKeyPressed = false;
             }
-        } else if (removeKeyPressed)
-        {
-            removeKeyPressed = false;
+
+            //removing a placed block
+            if (Input.GetAxisRaw("Fire2") != 0)                                     // this axis will be != 0 if the 'e' key is pressed
+            {
+                if (!removeKeyPressed)
+                {
+                    removeKeyPressed = true;
+                    removeToy();
+                }
+            } 
+            else if (removeKeyPressed)
+            {
+                removeKeyPressed = false;
+            }
         }
     }
 
@@ -403,6 +414,9 @@ public class PlayerController : MonoBehaviour
             stage3 = false;
             Cursor.lockState = CursorLockMode.None;
             firstHubVisit = true;
+            cinematicThreeNotDone = true;
+            cinematicTwoNotDone = true;
+            cinematicOneNotDone = true;
             SceneManager.LoadScene("Win");
         }
         else if (transform.position.y < -15.0f)
@@ -469,5 +483,52 @@ public class PlayerController : MonoBehaviour
         //ammoCount = 3;
         Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("Lose");
+    }
+    private void Cinematic(int cinematicNumber, bool notDoneBefore)
+    {
+        if(notDoneBefore)
+        {
+            if(cinematicNumber == 1)
+            {
+                Instantiate(levelOneCinematic);
+                cinematicOneNotDone = false;
+                paused = true;
+                dialogueObject = GameObject.FindWithTag("dialogue");
+                dialogueSource= dialogueObject.GetComponent<AudioSource>();
+                Invoke("CinematicEnd", dialogueSource.clip.length);
+            }
+            else if(cinematicNumber == 2)
+            {
+                Instantiate(levelTwoCinematic);
+                cinematicTwoNotDone = false;
+                paused = true;
+                dialogueObject = GameObject.FindWithTag("dialogue");
+                dialogueSource= dialogueObject.GetComponent<AudioSource>();
+                Invoke("CinematicEnd", dialogueSource.clip.length);
+            }
+            else if(cinematicNumber == 3)
+            {
+                Instantiate(levelThreeCinematic);
+                cinematicThreeNotDone = false;
+                paused = true;
+                dialogueObject = GameObject.FindWithTag("dialogue");
+                dialogueSource= dialogueObject.GetComponent<AudioSource>();
+                Invoke("CinematicEnd", dialogueSource.clip.length);
+            }
+            else
+            {
+                Instantiate(hubCinematic);
+                cinematicHubNotDone = false;
+                paused = true;
+                dialogueObject = GameObject.FindWithTag("dialogue");
+                dialogueSource= dialogueObject.GetComponent<AudioSource>();
+                Invoke("CinematicEnd", dialogueSource.clip.length);
+            }
+        }
+    }
+    private void CinematicEnd()
+    {
+        paused = false;
+        Destroy(GameObject.FindWithTag("Cinematic"));
     }
 }

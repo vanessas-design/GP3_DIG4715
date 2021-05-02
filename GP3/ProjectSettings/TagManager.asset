@@ -13,6 +13,7 @@ TagManager:
   - Ground
   - Button1
   - mp
+  - dialogue
   layers:
   - Default
   - TransparentFX
