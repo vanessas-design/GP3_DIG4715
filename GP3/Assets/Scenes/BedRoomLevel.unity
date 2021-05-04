@@ -6803,11 +6803,23 @@ PrefabInstance:
     - target: {fileID: 3675465225281888750, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
       propertyPath: ammoText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1951650820}
     - target: {fileID: 3675465225281888750, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
       propertyPath: blockPlace
       value: 
       objectReference: {fileID: 2722312712991898872, guid: 2b380a0b10b217d4cbf0e9402665448d, type: 3}
+    - target: {fileID: 3675465225281888750, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
+      propertyPath: levelTwoCinematic
+      value: 
+      objectReference: {fileID: 2270133911522628373, guid: 0be0739af57afc1479d585c99a903682, type: 3}
+    - target: {fileID: 3675465225281888750, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
+      propertyPath: levelOneCinematic
+      value: 
+      objectReference: {fileID: 7449685475738195877, guid: 5f27e514de96e9046952509d92799966, type: 3}
+    - target: {fileID: 3675465225281888750, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
+      propertyPath: levelThreeCinematic
+      value: 
+      objectReference: {fileID: 3243202987362813748, guid: c31e5d8bc32cd91499862f383a001ba3, type: 3}
     - target: {fileID: 3675465225281888751, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
       propertyPath: m_UseGravity
       value: 1
@@ -6940,6 +6952,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ea9634e41759bb4c97f5198359f5b3b, type: 3}
+--- !u!114 &1951650820 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 79422287, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
+  m_PrefabInstance: {fileID: 1717811322}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1964342960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7062,7 +7085,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b7a88399fba28a448bd4ba3ac8c424f9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0

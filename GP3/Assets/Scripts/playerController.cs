@@ -509,8 +509,8 @@ public class PlayerController : MonoBehaviour
             //kitchen level
             else if(cinematicNumber == 2)
             {
-                Instantiate(levelTwoCinematic);
-                cinematicTwoNotDone = false;
+                Instantiate(levelOneCinematic);
+                cinematicOneNotDone = false;
                 paused = true;
                 dialogueObject = GameObject.FindWithTag("dialogue");
                 dialogueSource= dialogueObject.GetComponent<AudioSource>();
@@ -552,8 +552,8 @@ public class PlayerController : MonoBehaviour
             //Bedroom level
             else
             {
-                Instantiate(levelOneCinematic);
-                cinematicOneNotDone = false;
+                Instantiate(levelTwoCinematic);
+                cinematicTwoNotDone = false;
                 paused = true;
                 dialogueObject = GameObject.FindWithTag("dialogue");
                 dialogueSource= dialogueObject.GetComponent<AudioSource>();

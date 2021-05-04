@@ -2419,7 +2419,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b7a88399fba28a448bd4ba3ac8c424f9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -10313,6 +10313,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3675465225281888750, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
+      propertyPath: levelOneCinematic
+      value: 
+      objectReference: {fileID: 7449685475738195877, guid: 5f27e514de96e9046952509d92799966, type: 3}
+    - target: {fileID: 3675465225281888750, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
+      propertyPath: levelTwoCinematic
+      value: 
+      objectReference: {fileID: 2270133911522628373, guid: 0be0739af57afc1479d585c99a903682, type: 3}
+    - target: {fileID: 3675465225281888750, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
+      propertyPath: levelThreeCinematic
+      value: 
+      objectReference: {fileID: 3243202987362813748, guid: c31e5d8bc32cd91499862f383a001ba3, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9baca4ad369f6e64c94d0be380437d04, type: 3}
 --- !u!1001 &5927935344435148152
