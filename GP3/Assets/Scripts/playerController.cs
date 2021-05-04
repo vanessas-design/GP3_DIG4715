@@ -711,7 +711,7 @@ public class PlayerController : MonoBehaviour
     {
         if (activeScene.name == "KitchenLevel")
         {
-            DialogueText.text = "Mom always says that messes can be beautiful, that life requires a little bit of chaos, or at least... she used to say…";
+            DialogueText.text = "is that...her spoon I see? I need to check it out.";
         }
         else if (activeScene.name == "BedRoomLevel")
         {
