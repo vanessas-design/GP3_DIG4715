@@ -1307,6 +1307,7 @@ MonoBehaviour:
   musicSource: {fileID: 682426495}
   musicClipLose: {fileID: 8300000, guid: d4db8c623c1c0f5489bef4aecdca027b, type: 3}
   backgroundLose: {fileID: 8300000, guid: 98db5bb7ef4d9034aae2db186551c0d8, type: 3}
+  lossCinematic: {fileID: 5099863703104103861, guid: 3a46a49daa7857747909ab6d5bf97ddf, type: 3}
 --- !u!1 &2084249018
 GameObject:
   m_ObjectHideFlags: 0

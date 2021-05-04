@@ -457,6 +457,7 @@ MonoBehaviour:
   musicSource: {fileID: 429297219}
   macGuffin: {fileID: 8300000, guid: 933a9503beb5a6e4c892f55cc36de707, type: 3}
   backgroundWin: {fileID: 8300000, guid: 3a3509e8a673b024f9424b6d62fc0395, type: 3}
+  winCinematic: {fileID: 5544666941509024838, guid: 177363d48e538ff4eb097da4e74e357f, type: 3}
 --- !u!1 &1031679247
 GameObject:
   m_ObjectHideFlags: 0

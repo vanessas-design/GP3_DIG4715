@@ -421,6 +421,10 @@ MonoBehaviour:
   stage1Light: {fileID: 0}
   stage2Light: {fileID: 0}
   stage3Light: {fileID: 0}
+  levelOneCinematic: {fileID: 9007873431666602263, guid: 36d65ac32e62b974294684b6842f0c04, type: 3}
+  levelTwoCinematic: {fileID: 0}
+  levelThreeCinematic: {fileID: 0}
+  hubCinematic: {fileID: 7057627393393411325, guid: ba9bc19c04bb2eb4aaf6f4eafd2d3f10, type: 3}
 --- !u!82 &3675465225281888749
 AudioSource:
   m_ObjectHideFlags: 0

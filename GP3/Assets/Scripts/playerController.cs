@@ -92,6 +92,8 @@ public class PlayerController : MonoBehaviour
 
     private GameObject dialogueObject;
     private AudioSource dialogueSource;
+    private GameObject dialogueTextObject;
+    private Text DialogueText;
 
     // Start is called before the first frame update
     void Start()
@@ -105,15 +107,15 @@ public class PlayerController : MonoBehaviour
         //Cinematics
         if (activeScene.name == "KitchenLevel")
         {
-            Cinematic(1, cinematicOneNotDone);
+            Cinematic(2, cinematicOneNotDone);
         }
         else if (activeScene.name == "BedRoomLevel")
         {
-            Cinematic(2, cinematicOneNotDone);
+            Cinematic(4, cinematicTwoNotDone);
         }
         else if (activeScene.name == "PlayGroundLevel")
         {
-            Cinematic(3, cinematicOneNotDone);
+            Cinematic(3, cinematicThreeNotDone);
         }
 
         Cursor.lockState = CursorLockMode.Locked;
@@ -135,7 +137,7 @@ public class PlayerController : MonoBehaviour
             if (firstHubVisit)
             {
                 transform.position = new Vector3(0, 13, 0);
-                Cinematic(4, cinematicHubNotDone);
+                Cinematic(1, cinematicHubNotDone);
             }
         }
     }
@@ -488,15 +490,23 @@ public class PlayerController : MonoBehaviour
     {
         if(notDoneBefore)
         {
+            //hub level
             if(cinematicNumber == 1)
             {
-                Instantiate(levelOneCinematic);
-                cinematicOneNotDone = false;
+                Instantiate(hubCinematic);
+                cinematicHubNotDone = false;
                 paused = true;
                 dialogueObject = GameObject.FindWithTag("dialogue");
                 dialogueSource= dialogueObject.GetComponent<AudioSource>();
+                dialogueTextObject = GameObject.FindWithTag("DialogueText");
+                DialogueText = dialogueTextObject.GetComponent<Text>();
+                DialogueText.text = "W-where...where am I...how’d did I…*sigh*. Are these, my memories….why am I here?";
+                Invoke("Textshift1", 16.0f);
+                Invoke("Textshift2", 26.0f);
+                Invoke("Textshift3", 38.0f);
                 Invoke("CinematicEnd", dialogueSource.clip.length);
             }
+            //kitchen level
             else if(cinematicNumber == 2)
             {
                 Instantiate(levelTwoCinematic);
@@ -504,8 +514,21 @@ public class PlayerController : MonoBehaviour
                 paused = true;
                 dialogueObject = GameObject.FindWithTag("dialogue");
                 dialogueSource= dialogueObject.GetComponent<AudioSource>();
+                dialogueTextObject = GameObject.FindWithTag("DialogueText");
+                DialogueText = dialogueTextObject.GetComponent<Text>();
+                DialogueText.text = "Wait, I remember this day! I begged my mom all day to let me stay home, I tried to fake a cold but she saw right through that.";
+                Invoke("Textshift1", 8.0f);
+                Invoke("Textshift2", 13.0f);
+                Invoke("Textshift3", 19.0f);
+                Invoke("Textshift4", 26.0f);
+                Invoke("Textshift5", 32.0f);
+                Invoke("Textshift6", 38.0f);
+                Invoke("Textshift7", 42.0f);
+                Invoke("Textshift8", 48.0f);
+                Invoke("Textshift9", 57.0f);        
                 Invoke("CinematicEnd", dialogueSource.clip.length);
             }
+            //PlayGround level
             else if(cinematicNumber == 3)
             {
                 Instantiate(levelThreeCinematic);
@@ -513,17 +536,192 @@ public class PlayerController : MonoBehaviour
                 paused = true;
                 dialogueObject = GameObject.FindWithTag("dialogue");
                 dialogueSource= dialogueObject.GetComponent<AudioSource>();
+                dialogueTextObject = GameObject.FindWithTag("DialogueText");
+                DialogueText = dialogueTextObject.GetComponent<Text>();
+                DialogueText.text = "My mom always loved taking me to the playground. She always said I was a creative kid and really enjoyed watching me pretend to be a cowboy or a pirate.";
+                Invoke("Textshift1", 8.0f);
+                Invoke("Textshift2", 12.0f);
+                Invoke("Textshift3", 17.0f);
+                Invoke("Textshift4", 25.0f);
+                Invoke("Textshift5", 33.0f);
+                Invoke("Textshift6", 41.0f);
+                Invoke("Textshift7", 48.0f);
+                Invoke("Textshift8", 55.0f);
                 Invoke("CinematicEnd", dialogueSource.clip.length);
             }
+            //Bedroom level
             else
             {
-                Instantiate(hubCinematic);
-                cinematicHubNotDone = false;
+                Instantiate(levelOneCinematic);
+                cinematicOneNotDone = false;
                 paused = true;
                 dialogueObject = GameObject.FindWithTag("dialogue");
                 dialogueSource= dialogueObject.GetComponent<AudioSource>();
+                dialogueTextObject = GameObject.FindWithTag("DialogueText");
+                DialogueText = dialogueTextObject.GetComponent<Text>();
+                DialogueText.text = "My mom always supported my addiction to games. She really loved playing them herself too. We would play board games like monopoly, and just classic games like hide and seek.";
+                Invoke("Textshift1", 9.0f);
+                Invoke("Textshift2", 6.0f);
+                Invoke("Textshift3", 6.0f);
+                Invoke("Textshift4", 6.0f);
+                Invoke("Textshift5", 6.0f);
+                Invoke("Textshift6", 5.0f);
+                Invoke("Textshift7", 6.0f);
+                Invoke("Textshift8", 6.0f);
+                Invoke("Textshift9", 10.0f);
+                Invoke("Textshift10", 10.0f);
                 Invoke("CinematicEnd", dialogueSource.clip.length);
             }
+        }
+    }
+    private void Textshift1()
+    {
+        if (activeScene.name == "HubLevel")
+        {
+            DialogueText.text = "wait...mom? These not just any memories, these are the ones...with mom.";
+        }
+        else if (activeScene.name == "KitchenLevel")
+        {
+            DialogueText.text = "She said I could stay if I helped her baked, but I hated cooking.";
+        }
+        else if (activeScene.name == "PlayGroundLevel")
+        {
+            DialogueText.text = "I remember the day I was The Might Knight of Castle Yamada!";
+        }
+        else if (activeScene.name == "BedRoomLevel")
+        {
+            DialogueText.text = "But I remember when she got me a gameboy for my birthday one year, and it was amazing!";
+        }
+    }
+    private void Textshift2()
+    {
+        if(activeScene.name == "HubLevel")
+        {
+            DialogueText.text = "All my favorite ones...and  are these...portals? Maybe I can...see her again? Hm.";
+        }
+        else if (activeScene.name == "KitchenLevel")
+        {
+            DialogueText.text = "However I figured that pushing through a few hours of baking were better than a whole day of math so, I said fine.";
+        }
+        else if (activeScene.name == "PlayGroundLevel")
+        {
+            DialogueText.text = "I made a super cool Sandcastle, and used my favorite shovel as my “sword”, but right before I was done,";
+        }
+        else if (activeScene.name == "BedRoomLevel")
+        {
+            DialogueText.text = "The first game I was able to buy for it was Super Mario, and I try my best to beat as many levels as I could before bedtime.";
+        }
+    }
+    private void Textshift3()
+    {
+        if(activeScene.name == "HubLevel")
+        {
+            DialogueText.text = "They seem to be...calling me. Maybe they can help find a way to get me out of here.";
+        }
+        else if (activeScene.name == "KitchenLevel")
+        {
+            DialogueText.text = "Mom said that we were going to bake cookies to bring to my aunt’s house the next day, and my favorite kind too, “super” chocolate chip.";
+        }
+        else if (activeScene.name == "PlayGroundLevel")
+        {
+            DialogueText.text = "one of the other kid’s frisbee accidentally flew into it and knocked down half of my castle. I was so devastated. I fell to my knees and started crying.";
+        }
+        else if (activeScene.name == "BedRoomLevel")
+        {
+            DialogueText.text = ". One night I was really struggling on the last level,  just didn’t know how to beat it, and my mom heard me getting frustrated.";
+        }
+    }
+    private void Textshift4()
+    {
+        if (activeScene.name == "KitchenLevel")
+        {
+            DialogueText.text = "I thought it would be cool to get to know how my mom made her famous cookies, and I actually ended up loving it.";
+        }
+        else if (activeScene.name == "PlayGroundLevel")
+        {
+            DialogueText.text = "The kid who threw the frisbee felt really bad about it too and apologized, but I wasn’t mad at him, just sad.";
+        }
+        else if (activeScene.name == "BedRoomLevel")
+        {
+            DialogueText.text = "She came in my room and asked what was wrong, and I told her how annoyed I was getting with the level.";
+        }
+    }
+    private void Textshift5()
+    {
+        if (activeScene.name == "KitchenLevel")
+        {
+            DialogueText.text = "She let me help her with every part, and she even let me mix the dough with her favorite wooden spoon.";
+        }
+        else if (activeScene.name == "PlayGroundLevel")
+        {
+            DialogueText.text = "My mom then picked me off me knees and wiped my tears, and told me that sometimes things we love get broken, but all it does is add history to it.";
+        }
+        else if (activeScene.name == "BedRoomLevel")
+        {
+            DialogueText.text = "She then sat with me, and propped up my favorite Teddy Bear, Jerry, next to me.";
+        }
+    }
+    private void Textshift6()
+    {
+        if (activeScene.name == "KitchenLevel")
+        {
+            DialogueText.text = "I don’t know what made it her favorite, maybe because it was her only one.";
+        }
+        else if (activeScene.name == "PlayGroundLevel")
+        {
+            DialogueText.text = "And with that history, it made it more beautiful. She told me she would help me rebuild it, no matter how long it took.";
+        }
+        else if (activeScene.name == "BedRoomLevel")
+        {
+            DialogueText.text = "She told me that the two of them were my cheerleaders and were going to cheer me on until I could finish the level. Now I was determine to get it done!";
+        }
+    }
+    private void Textshift7()
+    {
+        if (activeScene.name == "KitchenLevel")
+        {
+            DialogueText.text = "After that day I loved baking with her, and we always made such big messes when we did.";
+        }
+        else if (activeScene.name == "PlayGroundLevel")
+        {
+            DialogueText.text = "And after what seemed like hours, Castle Yamada was done! I even decided to leave a piece of the fallen sandcastle in the front.";
+        }
+        else if (activeScene.name == "BedRoomLevel")
+        {
+            DialogueText.text = "The two of them gave me support the whole time. Mom even let me stay up pass my bedtime till I could do it!";
+        }
+    }
+    private void Textshift8()
+    {
+        if (activeScene.name == "KitchenLevel")
+        {
+            DialogueText.text = "Mom always says that messes can be beautiful, that life requires a little bit of chaos, or at least... she used to say…";
+        }
+        else if (activeScene.name == "PlayGroundLevel")
+        {
+            DialogueText.text = "The two of us were now crowned protectors of the castle. I think I can actually...see my shovel. Castle Yamada, here I come.";
+        }
+        else if (activeScene.name == "BedRoomLevel")
+        {
+            DialogueText.text = "After a few more attempts, I finally beat it, and my mom told me how proud she was. She told me that whenever I had a goal, I was always determined to get to that finish.";
+        }
+    }
+    private void Textshift9()
+    {
+        if (activeScene.name == "KitchenLevel")
+        {
+            DialogueText.text = "Mom always says that messes can be beautiful, that life requires a little bit of chaos, or at least... she used to say…";
+        }
+        else if (activeScene.name == "BedRoomLevel")
+        {
+            DialogueText.text = "She tucked me in after that with Jerry, and I remember even now, no matter what I goals I set, I can still hear my mom cheering me on.";
+        }
+    }
+    private void Textshift10()
+    {
+        if (activeScene.name == "BedRoomLevel")
+        {
+            DialogueText.text = "I can hear Jerry too, with my imaginary voice I gave him. I think...I think I actually see him...over there...I got to get to him!";
         }
     }
     private void CinematicEnd()
