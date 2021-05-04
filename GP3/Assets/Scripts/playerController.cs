@@ -416,6 +416,7 @@ public class PlayerController : MonoBehaviour
             stage3 = false;
             Cursor.lockState = CursorLockMode.None;
             firstHubVisit = true;
+            cinematicHubNotDone = true;
             cinematicThreeNotDone = true;
             cinematicTwoNotDone = true;
             cinematicOneNotDone = true;
@@ -561,15 +562,15 @@ public class PlayerController : MonoBehaviour
                 DialogueText = dialogueTextObject.GetComponent<Text>();
                 DialogueText.text = "My mom always supported my addiction to games. She really loved playing them herself too. We would play board games like monopoly, and just classic games like hide and seek.";
                 Invoke("Textshift1", 9.0f);
-                Invoke("Textshift2", 6.0f);
-                Invoke("Textshift3", 6.0f);
-                Invoke("Textshift4", 6.0f);
-                Invoke("Textshift5", 6.0f);
-                Invoke("Textshift6", 5.0f);
-                Invoke("Textshift7", 6.0f);
-                Invoke("Textshift8", 6.0f);
-                Invoke("Textshift9", 10.0f);
-                Invoke("Textshift10", 10.0f);
+                Invoke("Textshift2", 15.0f);
+                Invoke("Textshift3", 21.0f);
+                Invoke("Textshift4", 27.0f);
+                Invoke("Textshift5", 33.0f);
+                Invoke("Textshift6", 38.0f);
+                Invoke("Textshift7", 44.0f);
+                Invoke("Textshift8", 50.0f);
+                Invoke("Textshift9", 60.0f);
+                Invoke("Textshift10", 70.0f);
                 Invoke("CinematicEnd", dialogueSource.clip.length);
             }
         }
